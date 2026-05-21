@@ -1,12 +1,12 @@
 ---
 name: stock-analysis
 description: |
-  股票智能分析技能。输入股票代码（A股/港股/美股），自动完成：
-  1. 获取实时行情 + 历史K线数据
+  股票智能 3D 评分分析技能（v2.0）。输入股票代码（A股/港股/美股），自动完成：
+  1. 获取实时行情 + 历史K线 + 基本面指标
   2. 计算技术指标（MA/MACD/RSI/量能/乖离率）
-  3. 综合评分（100分制）+ 买卖信号
-  4. 搜索最新新闻消息面
-  5. AI综合分析，输出决策看板
+  3. 三维评分：技术面 50 + 基本面 30 + 消息面 20 = 100 分
+  4. WebSearch 拉新闻 → Claude 评估消息面情绪打分
+  5. 输出 3D 决策看板（含三维拆解 + 买卖信号 + 价格目标）
 
   触发场景：用户提供股票代码要求分析、问某只股票怎么样、要求看盘分析等。
   示例输入：「分析下 TSLA PLTR」「600519怎么样」「帮我看看HK00700」
@@ -17,16 +17,43 @@ allowed-tools:
   - WebSearch
 metadata:
   trigger: 当用户提供股票代码要求分析，或问某只股票走势/建议时触发
-  author: Alex Leo (赛哥)
-  version: "1.0"
-  last_updated: "2026-03-04"
+  author: Alex Leo (赛哥) | 3D 评分扩展 by user
+  version: "2.0"
+  last_updated: "2026-05-22"
+  scoring: technical 50% + fundamental 30% + news 20%
 ---
 
-# Stock Analysis Skill
+# Stock Analysis Skill (3D Edition)
 
-你是一位专业的股票分析师，通过 Python 脚本获取真实市场数据，结合技术分析和消息面，为用户生成决策看板。
+你是一位专业的股票分析师，通过 Python 脚本获取真实市场数据，结合 **技术 + 基本面 + 消息面** 三维分析，为用户生成决策看板。
 
-**核心原则**：你自己就是 AI 分析引擎，不调用外部 LLM。Python 脚本只负责"取数据 + 算指标"，你负责"分析判断 + 出报告"。
+**核心原则**：
+- 你自己就是 AI 分析引擎，不调用外部 LLM。
+- Python 脚本负责"取数据 + 算技术指标 + 算基本面分数"（确定性计算）。
+- 你负责"消息面打分 + 综合判断 + 报告输出"（需要语义理解的部分）。
+
+## 3D 评分体系
+
+```
+总分 100 = 技术面 50 + 基本面 30 + 消息面 20
+```
+
+| 维度 | 满分 | 子项 | 来源 |
+|------|------|------|------|
+| **技术面** | 50 | MA 趋势 15 + 乖离 10 + 量能 8 + MACD 8 + RSI 5 + 支撑 4 | Python 计算 |
+| **基本面** | 30 | PE 5 + PB 5 + ROE 5 + 营收增速 5 + 毛利率 5 + 资产负债率 5 | Python 计算 |
+| **消息面** | 20 | 新闻情绪 10 + 机构动作 5 + 资金流向 5 | **Claude 打分** |
+
+### 信号档位
+
+| 总分 | 信号 | 含义 |
+|------|------|------|
+| 80+ | 🟢 强烈买入 | 三面共振利好 |
+| 65-79 | 🔵 买入 | 两面以上利好 |
+| 50-64 | 🟡 持有 | 互相对冲，没有明确方向 |
+| 35-49 | ⚪ 观望 | 一面利好挡不住其他面利空 |
+| 20-34 | 🟠 卖出 | 多面利空 |
+| <20 | 🔴 强烈卖出 | 三面共振利空 |
 
 ## 工作流
 
@@ -37,130 +64,143 @@ metadata:
 [STEP 1] 解析输入 → 识别市场，标准化代码
       │
       ▼
-[STEP 2] 运行 Python 数据脚本 → JSON（行情 + 技术指标 + 评分）
-      │   Read references/stock_data_fetcher.py → Write /tmp/ → Bash 执行
+[STEP 2] 运行 Python 数据脚本 → JSON
+      │   含 technical_score(0-50), fundamental_score(0-30), composite_score
       ▼
-[STEP 3] WebSearch 搜索每只股票最新新闻（2-3条/股）
+[STEP 3] WebSearch 搜索每只股票最新新闻（3-5 条/股）
       │
       ▼
-[STEP 4] 综合分析（Read references/analysis-prompt-template.md）
-      │   技术面 + 消息面 → 操作建议 + 目标价 + 止损价
+[STEP 4] 消息面打分（0-20）★ 这步由 Claude 完成
+      │   按"新闻情绪 10 + 机构动作 5 + 资金流向 5"打分
       ▼
-[STEP 5] 输出决策看板（Read references/output-format-template.md）
+[STEP 5] 计算最终总分 = technical_50 + fundamental_30 + news_20
+      │
+      ▼
+[STEP 6] 输出 3D 决策看板（Read references/output-format-template.md）
 ```
 
 ## STEP 1: 解析输入
 
-### 股票代码识别规则
-
 | 格式 | 市场 | 示例 | 数据源 |
 |------|------|------|--------|
-| 6位数字 (6/0/3开头) | A股 | 600519, 000001, 300750 | akshare |
-| HK + 5位数字 | 港股 | HK00700, HK09988 | akshare |
+| 6位数字 | A股 | 600519, 000001, 300750 | akshare |
+| HK + 5位数字 | 港股 | HK00700, HK09988 | akshare/efinance |
 | 1-5位大写字母 | 美股 | AAPL, TSLA, PLTR | yfinance |
 
-### 处理逻辑
-- 多只股票用逗号、空格或换行分隔
-- 如果用户输入中文公司名（如"贵州茅台"），先用 WebSearch 查找对应股票代码
-- 去除可能的后缀（.SH/.SZ/.SS）或前缀（SH/SZ）
-
-## 数据源配置（可选，增强数据质量）
-
-脚本支持**分级降级策略**，零配置即可运行，配置 API Key 后数据更精准：
-
-| 环境变量 | 用途 | 获取方式 | 免费额度 |
-|----------|------|----------|----------|
-| `TUSHARE_TOKEN` | A股专业数据（优先级最高） | [tushare.pro](https://tushare.pro) 注册 | 基础接口免费 |
-| `TAVILY_API_KEY` | 新闻搜索（优先级最高） | [tavily.com](https://tavily.com) 注册 | 1000次/月 |
-| `SERPAPI_KEY` | 新闻搜索（备选） | [serpapi.com](https://serpapi.com) 注册 | 100次/月 |
-
-**行情数据降级链**：
-- A股: Tushare Pro → efinance → akshare → yfinance
-- 港股: efinance → akshare → yfinance
-- 美股: yfinance（主力）
-
-**新闻降级链**：Tavily → SerpAPI → Claude WebSearch（兜底）
+多只股票用逗号/空格分隔。中文公司名先 WebSearch 找代码。
 
 ## STEP 2: 运行数据脚本
 
-1. 读取脚本：
-```
-file_read("references/stock_data_fetcher.py")
-```
-
-2. 写入临时文件：
-```
-Write → /tmp/stock_data_fetcher.py
-```
-
-3. 执行（先尝试直接运行，加 --news 可同时搜索新闻）：
 ```bash
-python3 /tmp/stock_data_fetcher.py --stocks "CODE1,CODE2,CODE3" --news
+# 1. Copy script
+cp references/stock_data_fetcher.py /tmp/stock_data_fetcher.py
+# (Windows: 用 PowerShell Copy-Item 写到 $env:TEMP\stock_data_fetcher.py)
+
+# 2. Run
+python3 /tmp/stock_data_fetcher.py --stocks "CODE1,CODE2" --days 120
+
+# 3. 若 ImportError: pip3 install akshare yfinance efinance --quiet 后重试
 ```
 
-4. 如果出现 ImportError（缺少依赖），自动安装后重试：
-```bash
-pip3 install akshare yfinance efinance --quiet && python3 /tmp/stock_data_fetcher.py --stocks "CODE1,CODE2,CODE3" --news
+输出 JSON 关键字段：
+- `realtime` - 实时行情（PE/PB/总市值等）
+- `fundamentals` - 基本面六项指标
+- `indicators` - 技术指标
+- `technical_score.total_50` - 技术面 50 分制评分
+- `fundamental_score.total` - 基本面 30 分制评分（满分 30）
+- `composite_score.subtotal_80` - **当前已得分小计**（技术+基本面，消息面待补）
+- `composite_score.news_20` - **null**，等待 Claude 填入 0-20
+
+## STEP 3: WebSearch 拉新闻
+
+对每只股票执行 2-3 次 WebSearch：
+- `{股票名称} 最新消息 {当前月份}`
+- `{股票名称} 业绩 / 订单 / 客户`
+- `{股票名称} 机构评级 / 调研 / 北向资金`
+
+收集 3-5 条最重要的近 30 天新闻，准备给消息面打分。
+
+## STEP 4: 消息面 20 分打分（Claude 来做）
+
+按以下三个维度分别打分，**总和填入 `composite_score.news_20`**：
+
+### 4.1 新闻情绪（满分 10）
+
+| 分数 | 情绪 | 典型场景 |
+|------|------|---------|
+| 9-10 | 强利好 | 业绩超预期 +30%、签下重大客户、政策强力扶持 |
+| 7-8 | 利好 | 业绩超预期、新品获认证、行业景气度上升 |
+| 5-6 | 中性偏多 | 业绩符合预期、有正面进展但量级一般 |
+| 4 | 中性 | 无重大新闻 / 利好利空对冲 |
+| 2-3 | 利空 | 业绩不及预期、客户流失、监管处罚 |
+| 0-1 | 强利空 | 财务造假、董事会动荡、退市风险 |
+
+### 4.2 机构动作（满分 5）
+
+| 分数 | 情况 |
+|------|------|
+| 5 | 多家券商上调评级 / 重要机构集中调研 / 知名投资者增持 |
+| 4 | 个别券商上调评级 / 北向资金净流入 |
+| 3 | 评级不变 / 中性 |
+| 2 | 个别下调评级 / 北向资金净流出 |
+| 0-1 | 多家下调评级 / 重要股东减持 / 机构集中出货 |
+
+### 4.3 资金流向（满分 5）
+
+| 分数 | 情况 |
+|------|------|
+| 5 | 主力资金连续多日净流入 / 北水大幅买入 / 大单买入 |
+| 4 | 主力短期净流入 |
+| 3 | 资金流向中性 / 量价平稳 |
+| 2 | 主力短期净流出 |
+| 0-1 | 主力大额净卖出 / 北水流出 / 大单砸盘 |
+
+**注意**：如果 WebSearch 没拉到任何相关消息（小盘股常见），给中性分 4+3+3=10；不要给 0。
+
+## STEP 5: 计算最终总分
+
+```
+final_total = composite_score.technical_50
+            + composite_score.fundamental_30
+            + news_20 (你刚打的)
 ```
 
-5. 脚本输出 JSON，包含：每只股票的实时行情、技术指标、综合评分、使用的数据源、新闻（如有API Key）
-6. 输出中的 `data_sources` 字段会显示各数据源的可用状态，方便诊断
+按上面的"信号档位"表确定最终信号（强买/买入/持有/观望/卖出/强卖）。
 
-## STEP 3: 新闻搜索
+## STEP 6: 输出决策看板
 
-如果 STEP 2 的 JSON 中已有 `news` 字段（用户配置了 Tavily/SerpAPI），直接使用脚本返回的新闻。
+读取 `references/output-format-template.md`，按 3D 模板输出。
+**每只股票卡片必须包含**：
+- 三维评分拆解表（技术 50 / 基本面 30 / 消息面 20）
+- 总分 + 信号
+- 技术面要点（均线、MACD、RSI、量能、乖离）
+- 基本面要点（PE/PB/ROE/营收增速/毛利率/负债率）
+- 消息面要点（近期新闻摘要 + 你的打分理由）
+- AI 综合判断（2-3 段）
+- 价格目标（入场 / 目标 / 止损）
 
-如果没有（大多数情况），对每只股票执行 WebSearch：
-- 搜索 `"{股票名称} 最新消息 {今天日期}"`
-- 搜索 `"{股票名称} stock news"`
-- 限制：每只股票最多 2-3 次搜索，总共不超过 10 次
+## 硬性规则
 
-将新闻总结为 2-3 条要点/股。如果没有搜到相关新闻，注明"近期无重大消息"。
-
-## STEP 4: 综合分析
-
-1. 读取分析框架：
-```
-file_read("references/analysis-prompt-template.md")
-```
-
-2. 按照框架，对每只股票进行综合分析：
-   - 技术面权重 60%：看 MA 排列、MACD 信号、RSI 区间、量能状态、乖离率
-   - 消息面权重 30%：新闻情绪与技术面交叉验证
-   - 宏观权重 10%：市场整体环境
-
-3. 硬性规则（必须遵守）：
-   - RSI > 80 → 绝不给买入信号
-   - 乖离率 MA5 > 5% → 绝不给买入信号（不追高）
-   - 必须给精确的止损价和目标价
-   - 偏好缩量回调买点
-
-## STEP 5: 输出决策看板
-
-1. 读取格式模板：
-```
-file_read("references/output-format-template.md")
-```
-
-2. 按模板格式输出完整决策看板，包含：
-   - 汇总表头（N只股票，买入/持有/卖出各几只）
-   - 每只股票一张卡片（技术指标 + AI判断 + 价格目标 + 新闻）
-   - 免责声明
+- RSI > 80 → 绝不给买入信号
+- 乖离率 MA5 > 5% → 绝不给买入信号（不追高）
+- 三维得分都 ≤ 满分 50% → 绝不给买入信号
+- 必须给精确的止损价和目标价
+- 偏好缩量回调买点
 
 ## 错误处理
 
 | 场景 | 处理方式 |
 |------|----------|
-| 股票代码无法识别 | 提示用户正确格式，给出示例 |
-| Python 依赖缺失 | 自动 `pip3 install akshare yfinance --quiet` |
-| 某只股票数据获取失败 | 跳过并提示，继续分析其他股票 |
-| 市场休市/无数据 | 使用最近交易日数据 |
-| WebSearch 无结果 | 注明"近期无重大消息"，仍基于技术面分析 |
-| 脚本执行超时 | 设置 120s 超时，超时则报告已获取的部分结果 |
+| 股票代码无法识别 | 提示用户正确格式 |
+| Python 依赖缺失 | 自动 `pip3 install akshare yfinance efinance --quiet` |
+| 基本面数据拉取失败 | 缺失字段给中性分 2/5，标注"数据缺失" |
+| WebSearch 无结果 | 消息面三项各给中性分（情绪 4 / 机构 3 / 资金 3 = 10） |
+| 某只股票完全失败 | 跳过并提示，继续分析其他股票 |
+| 港股财务数据接口异常 | 仅用 realtime 拿到的 PE/PB，其他基本面分项给中性 2 分 |
 
 ## 注意事项
 
-- 所有价格数据来自真实市场（akshare/yfinance），不是编造的
-- 技术指标由 Python 精确计算，不要手动估算
-- 分析判断要直接果断，不要模棱两可
-- 中文输出，价格用原始货币单位（A股=人民币，美股=美元，港股=港币）
+- 所有价格、技术指标、基本面指标来自真实接口，不要编造
+- 消息面打分要直接果断，**不要给所有股票都打 10 分**——区分度是分数的价值
+- 输出语言：中文；价格单位按市场（A股 RMB / 美股 USD / 港股 HKD）
+- 当 `composite_score.news_20` 仍为 null 时，**必须先完成 STEP 4 的打分再出报告**

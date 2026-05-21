@@ -365,7 +365,258 @@ def _fetch_realtime_us(code: str) -> dict:
         return {}
 
 
-# --- Priority router ---
+# ============================================================
+# SECTION 2.4: Fundamental Data Fetchers (NEW)
+# ============================================================
+
+def _safe_pct(val) -> float:
+    """Parse value that may be percent string (e.g. '15.5%') or float."""
+    if val is None:
+        return None
+    if isinstance(val, str):
+        s = val.replace("%", "").replace(",", "").strip()
+        if s in ("", "--", "NA", "nan", "None"):
+            return None
+        try:
+            return round(float(s), 2)
+        except ValueError:
+            return None
+    return _safe_float(val)
+
+
+def _empty_fundamentals(source="unknown"):
+    return {
+        "pe_ttm": None, "pb": None, "roe": None,
+        "revenue_yoy": None, "gross_margin": None, "debt_to_asset": None,
+        "source": source,
+    }
+
+
+def fetch_fundamentals_a(code: str, realtime: dict) -> dict:
+    """Fetch A-share fundamentals. Try multiple sources for robustness."""
+    fund = _empty_fundamentals("akshare_spot_only")
+    fund["pe_ttm"] = realtime.get("pe_ratio")
+    fund["pb"] = realtime.get("pb_ratio")
+
+    # --- Fill PE/PB: try akshare individual info, then efinance ---
+    if fund["pe_ttm"] is None or fund["pb"] is None:
+        # Try 1: akshare individual info
+        if _check_source("akshare"):
+            try:
+                import akshare as ak
+                info_df = ak.stock_individual_info_em(symbol=code)
+                if info_df is not None and not info_df.empty:
+                    # Returns DataFrame with item-value pairs
+                    info_dict = dict(zip(info_df["item"].astype(str), info_df["value"]))
+                    if fund["pe_ttm"] is None:
+                        fund["pe_ttm"] = _safe_pct(info_dict.get("市盈率(动)") or info_dict.get("市盈率") or info_dict.get("市盈率(TTM)"))
+                    if fund["pb"] is None:
+                        fund["pb"] = _safe_pct(info_dict.get("市净率"))
+            except Exception as e:
+                _log(f"[{code}] akshare individual_info failed: {e}")
+
+        # Try 2: efinance base info
+        if (fund["pe_ttm"] is None or fund["pb"] is None) and _check_source("efinance"):
+            try:
+                import efinance as ef
+                base = ef.stock.get_base_info(code)
+                if base is not None:
+                    if hasattr(base, "to_dict"):
+                        bd = base.to_dict()
+                    else:
+                        bd = dict(base)
+                    if fund["pe_ttm"] is None:
+                        fund["pe_ttm"] = _safe_pct(bd.get("市盈率(动)") or bd.get("市盈率"))
+                    if fund["pb"] is None:
+                        fund["pb"] = _safe_pct(bd.get("市净率"))
+            except Exception as e:
+                _log(f"[{code}] efinance base_info failed: {e}")
+
+        # Try 3: yfinance fallback (most reliable but slowest)
+        if (fund["pe_ttm"] is None or fund["pb"] is None) and _check_source("yfinance"):
+            try:
+                import yfinance as yf
+                yf_code = to_yfinance_code(code, "cn_a")
+                info = yf.Ticker(yf_code).info
+                if fund["pe_ttm"] is None:
+                    fund["pe_ttm"] = _safe_float(info.get("trailingPE"))
+                if fund["pb"] is None:
+                    fund["pb"] = _safe_float(info.get("priceToBook"))
+            except Exception as e:
+                _log(f"[{code}] yfinance fundamentals fallback failed: {e}")
+
+    if not _check_source("akshare"):
+        return fund
+
+    import akshare as ak
+
+    # Try strategy 1: 同花顺财务摘要 (按报告期)
+    try:
+        df = ak.stock_financial_abstract_ths(symbol=code, indicator="按报告期")
+        if df is not None and not df.empty:
+            latest = df.iloc[0]
+            cols = list(df.columns)
+            # ROE
+            for k in ("净资产收益率", "加权净资产收益率", "净资产收益率(摊薄)", "净资产收益率(%)"):
+                if k in cols:
+                    fund["roe"] = _safe_pct(latest.get(k))
+                    if fund["roe"] is not None:
+                        break
+            # 毛利率
+            for k in ("销售毛利率", "毛利率", "销售毛利率(%)"):
+                if k in cols:
+                    fund["gross_margin"] = _safe_pct(latest.get(k))
+                    if fund["gross_margin"] is not None:
+                        break
+            # 营收增速
+            for k in ("营业总收入同比增长率", "营业收入同比增长率", "营业总收入同比", "营业收入同比"):
+                if k in cols:
+                    fund["revenue_yoy"] = _safe_pct(latest.get(k))
+                    if fund["revenue_yoy"] is not None:
+                        break
+            # 资产负债率
+            for k in ("资产负债率", "资产负债率(%)"):
+                if k in cols:
+                    fund["debt_to_asset"] = _safe_pct(latest.get(k))
+                    if fund["debt_to_asset"] is not None:
+                        break
+            fund["source"] = "akshare_ths"
+            _log(f"[{code}] Fundamentals via akshare_ths (cols={len(cols)})")
+    except Exception as e:
+        _log(f"[{code}] akshare_ths failed: {e}")
+
+    # Strategy 2: compute revenue_yoy from two periods if still missing
+    if fund["revenue_yoy"] is None:
+        try:
+            df = ak.stock_financial_abstract_ths(symbol=code, indicator="按报告期")
+            if df is not None and len(df) >= 5:
+                cols = list(df.columns)
+                for rev_key in ("营业总收入", "营业收入"):
+                    if rev_key in cols:
+                        cur = _safe_pct(df.iloc[0].get(rev_key))
+                        prev = _safe_pct(df.iloc[4].get(rev_key))  # 同期 (4 quarters ago)
+                        if cur and prev and prev > 0:
+                            fund["revenue_yoy"] = round((cur - prev) / prev * 100, 2)
+                            break
+        except Exception:
+            pass
+
+    return fund
+
+
+def fetch_fundamentals_hk(code: str, realtime: dict) -> dict:
+    """Fetch HK stock fundamentals."""
+    fund = _empty_fundamentals("akshare_spot_only")
+    fund["pe_ttm"] = realtime.get("pe_ratio")
+    fund["pb"] = realtime.get("pb_ratio")
+
+    # Try akshare HK financial indicator
+    if _check_source("akshare"):
+        try:
+            import akshare as ak
+            df = ak.stock_financial_hk_analysis_indicator_em(symbol=code, indicator="年度")
+            if df is not None and not df.empty:
+                latest = df.iloc[0]
+                cols = list(df.columns)
+                for k in ("净资产收益率(摊薄)", "净资产收益率", "ROE", "净资产收益率(%)"):
+                    if k in cols:
+                        v = _safe_pct(latest.get(k))
+                        if v is not None:
+                            fund["roe"] = v
+                            break
+                for k in ("销售毛利率", "毛利率", "毛利率%", "毛利率(%)"):
+                    if k in cols:
+                        v = _safe_pct(latest.get(k))
+                        if v is not None:
+                            fund["gross_margin"] = v
+                            break
+                for k in ("资产负债率", "资产负债率%", "资产负债率(%)"):
+                    if k in cols:
+                        v = _safe_pct(latest.get(k))
+                        if v is not None:
+                            fund["debt_to_asset"] = v
+                            break
+                for k in ("营业总收入同比增长率", "营业收入同比增长率", "营收同比"):
+                    if k in cols:
+                        v = _safe_pct(latest.get(k))
+                        if v is not None:
+                            fund["revenue_yoy"] = v
+                            break
+                fund["source"] = "akshare_hk"
+                _log(f"[HK{code}] Fundamentals via akshare_hk (cols={len(cols)})")
+        except Exception as e:
+            _log(f"[HK{code}] akshare_hk fundamentals failed: {e}")
+
+    # yfinance fallback for any missing fields
+    missing = [k for k in ("pe_ttm", "pb", "roe", "revenue_yoy", "gross_margin", "debt_to_asset") if fund[k] is None]
+    if missing and _check_source("yfinance"):
+        try:
+            import yfinance as yf
+            yf_code = to_yfinance_code(code, "cn_hk")
+            info = yf.Ticker(yf_code).info
+            if fund["pe_ttm"] is None:
+                fund["pe_ttm"] = _safe_float(info.get("trailingPE"))
+            if fund["pb"] is None:
+                fund["pb"] = _safe_float(info.get("priceToBook"))
+            if fund["roe"] is None:
+                roe = info.get("returnOnEquity")
+                if roe is not None:
+                    fund["roe"] = round(float(roe) * 100, 2)
+            if fund["revenue_yoy"] is None:
+                rg = info.get("revenueGrowth")
+                if rg is not None:
+                    fund["revenue_yoy"] = round(float(rg) * 100, 2)
+            if fund["gross_margin"] is None:
+                gm = info.get("grossMargins")
+                if gm is not None:
+                    fund["gross_margin"] = round(float(gm) * 100, 2)
+            if fund["debt_to_asset"] is None:
+                de = info.get("debtToEquity")
+                if de is not None:
+                    ratio = float(de) / 100.0 if float(de) > 5 else float(de)
+                    if ratio > 0:
+                        fund["debt_to_asset"] = round(ratio / (1 + ratio) * 100, 2)
+            fund["source"] = fund["source"] + "+yfinance" if fund["source"] != "akshare_spot_only" else "yfinance"
+            _log(f"[HK{code}] Fundamentals filled via yfinance fallback")
+        except Exception as e:
+            _log(f"[HK{code}] yfinance HK fallback failed: {e}")
+
+    return fund
+
+
+def fetch_fundamentals_us(code: str) -> dict:
+    """Fetch US stock fundamentals via yfinance."""
+    fund = _empty_fundamentals("yfinance")
+    try:
+        import yfinance as yf
+        info = yf.Ticker(code).info
+        fund["pe_ttm"] = _safe_float(info.get("trailingPE"))
+        fund["pb"] = _safe_float(info.get("priceToBook"))
+        roe = info.get("returnOnEquity")
+        if roe is not None:
+            fund["roe"] = round(float(roe) * 100, 2)
+        rev_growth = info.get("revenueGrowth")
+        if rev_growth is not None:
+            fund["revenue_yoy"] = round(float(rev_growth) * 100, 2)
+        gm = info.get("grossMargins")
+        if gm is not None:
+            fund["gross_margin"] = round(float(gm) * 100, 2)
+        de = info.get("debtToEquity")
+        # yfinance debtToEquity is D/E ratio (often as percent e.g. 150 meaning 1.5)
+        # Convert to debt/asset: D/A = D/(D+E)
+        if de is not None:
+            ratio = float(de) / 100.0 if float(de) > 5 else float(de)
+            if ratio > 0:
+                fund["debt_to_asset"] = round(ratio / (1 + ratio) * 100, 2)
+        _log(f"[{code}] Fundamentals via yfinance")
+    except Exception as e:
+        _log(f"[{code}] yfinance fundamentals failed: {e}")
+    return fund
+
+
+# ============================================================
+# SECTION 2.5: Priority router (now also fetches fundamentals)
+# ============================================================
 
 def fetch_cn_a(code: str, days: int) -> dict:
     """Fetch A-share with priority: Tushare > efinance > akshare > yfinance."""
@@ -406,7 +657,8 @@ def fetch_cn_a(code: str, days: int) -> dict:
 
     realtime = _fetch_realtime_a(code)
     name = realtime.get("name", code)
-    return {"ohlcv": ohlcv, "realtime": realtime, "name": name, "source": source}
+    fundamentals = fetch_fundamentals_a(code, realtime)
+    return {"ohlcv": ohlcv, "realtime": realtime, "fundamentals": fundamentals, "name": name, "source": source}
 
 
 def fetch_hk(code: str, days: int) -> dict:
@@ -438,7 +690,8 @@ def fetch_hk(code: str, days: int) -> dict:
 
     realtime = _fetch_realtime_hk(code)
     name = realtime.get("name", f"HK{code}")
-    return {"ohlcv": ohlcv, "realtime": realtime, "name": name, "source": source}
+    fundamentals = fetch_fundamentals_hk(code, realtime)
+    return {"ohlcv": ohlcv, "realtime": realtime, "fundamentals": fundamentals, "name": name, "source": source}
 
 
 def fetch_us(code: str, days: int) -> dict:
@@ -449,11 +702,12 @@ def fetch_us(code: str, days: int) -> dict:
         last = ohlcv[-1]
         realtime = {"name": code, "price": last["close"], "change_pct": last.get("pct_chg")}
     name = realtime.get("name", code)
-    return {"ohlcv": ohlcv, "realtime": realtime, "name": name, "source": source}
+    fundamentals = fetch_fundamentals_us(code)
+    return {"ohlcv": ohlcv, "realtime": realtime, "fundamentals": fundamentals, "name": name, "source": source}
 
 
 # ============================================================
-# SECTION 2.5: News Search (optional, with graceful degradation)
+# SECTION 2.6: News Search (optional, with graceful degradation)
 # ============================================================
 
 def search_news(stock_name: str, code: str, max_results: int = 5) -> list:
@@ -873,6 +1127,155 @@ def calc_trend_score(ma_data: dict, macd_data: dict, rsi_data: dict,
 
 
 # ============================================================
+# SECTION 4.5: Fundamental Score (30 pts) - NEW
+# ============================================================
+
+def _score_pe(pe):
+    """PE 估值 (5 pts). Lower is cheaper; negative means loss."""
+    if pe is None:
+        return 2, "数据缺失"
+    if pe <= 0:
+        return 0, f"PE={pe:.1f} 亏损或负值"
+    if pe < 15:
+        return 5, f"PE={pe:.1f} 便宜"
+    if pe < 25:
+        return 4, f"PE={pe:.1f} 合理"
+    if pe < 40:
+        return 3, f"PE={pe:.1f} 偏贵"
+    if pe < 60:
+        return 1, f"PE={pe:.1f} 高估"
+    return 0, f"PE={pe:.1f} 极度高估"
+
+
+def _score_pb(pb):
+    """PB 估值 (5 pts)."""
+    if pb is None:
+        return 2, "数据缺失"
+    if pb <= 0:
+        return 0, f"PB={pb:.2f} 异常"
+    if pb < 1:
+        return 5, f"PB={pb:.2f} 破净"
+    if pb < 2:
+        return 5, f"PB={pb:.2f} 便宜"
+    if pb < 4:
+        return 4, f"PB={pb:.2f} 合理"
+    if pb < 6:
+        return 2, f"PB={pb:.2f} 偏贵"
+    return 0, f"PB={pb:.2f} 昂贵"
+
+
+def _score_roe(roe):
+    """ROE (5 pts). %"""
+    if roe is None:
+        return 2, "数据缺失"
+    if roe >= 20:
+        return 5, f"ROE={roe:.1f}% 高质量"
+    if roe >= 15:
+        return 4, f"ROE={roe:.1f}% 优秀"
+    if roe >= 10:
+        return 3, f"ROE={roe:.1f}% 一般"
+    if roe >= 5:
+        return 2, f"ROE={roe:.1f}% 偏弱"
+    if roe >= 0:
+        return 1, f"ROE={roe:.1f}% 很弱"
+    return 0, f"ROE={roe:.1f}% 亏损"
+
+
+def _score_revenue_yoy(yoy):
+    """营收增速 (5 pts). %"""
+    if yoy is None:
+        return 2, "数据缺失"
+    if yoy >= 50:
+        return 5, f"营收YoY={yoy:.1f}% 高速增长"
+    if yoy >= 20:
+        return 4, f"营收YoY={yoy:.1f}% 强劲"
+    if yoy >= 10:
+        return 3, f"营收YoY={yoy:.1f}% 稳健"
+    if yoy >= 0:
+        return 2, f"营收YoY={yoy:.1f}% 缓慢"
+    if yoy >= -10:
+        return 1, f"营收YoY={yoy:.1f}% 下滑"
+    return 0, f"营收YoY={yoy:.1f}% 大幅下滑"
+
+
+def _score_gross_margin(gm):
+    """毛利率 (5 pts). %"""
+    if gm is None:
+        return 2, "数据缺失"
+    if gm >= 50:
+        return 5, f"毛利率={gm:.1f}% 高毛利"
+    if gm >= 30:
+        return 4, f"毛利率={gm:.1f}% 健康"
+    if gm >= 20:
+        return 3, f"毛利率={gm:.1f}% 一般"
+    if gm >= 10:
+        return 2, f"毛利率={gm:.1f}% 偏低"
+    if gm > 0:
+        return 1, f"毛利率={gm:.1f}% 低毛利"
+    return 0, f"毛利率={gm:.1f}% 负毛利"
+
+
+def _score_debt(da):
+    """资产负债率 (5 pts). %"""
+    if da is None:
+        return 2, "数据缺失"
+    if da < 30:
+        return 5, f"负债率={da:.1f}% 非常健康"
+    if da < 50:
+        return 4, f"负债率={da:.1f}% 健康"
+    if da < 65:
+        return 3, f"负债率={da:.1f}% 一般"
+    if da < 80:
+        return 1, f"负债率={da:.1f}% 高杠杆"
+    return 0, f"负债率={da:.1f}% 高风险"
+
+
+def calc_fundamental_score(fundamentals: dict) -> dict:
+    """
+    Composite fundamental scoring (30 points total):
+    PE 5 + PB 5 + ROE 5 + Revenue YoY 5 + Gross Margin 5 + Debt/Asset 5
+    """
+    if not fundamentals:
+        fundamentals = _empty_fundamentals()
+
+    pe_score, pe_note = _score_pe(fundamentals.get("pe_ttm"))
+    pb_score, pb_note = _score_pb(fundamentals.get("pb"))
+    roe_score, roe_note = _score_roe(fundamentals.get("roe"))
+    rev_score, rev_note = _score_revenue_yoy(fundamentals.get("revenue_yoy"))
+    gm_score, gm_note = _score_gross_margin(fundamentals.get("gross_margin"))
+    debt_score, debt_note = _score_debt(fundamentals.get("debt_to_asset"))
+
+    breakdown = {
+        "pe": pe_score, "pb": pb_score, "roe": roe_score,
+        "revenue_yoy": rev_score, "gross_margin": gm_score, "debt_to_asset": debt_score,
+    }
+    notes = {
+        "pe": pe_note, "pb": pb_note, "roe": roe_note,
+        "revenue_yoy": rev_note, "gross_margin": gm_note, "debt_to_asset": debt_note,
+    }
+    total = sum(breakdown.values())
+
+    if total >= 24:
+        rating = "优秀"
+    elif total >= 18:
+        rating = "良好"
+    elif total >= 12:
+        rating = "中等"
+    elif total >= 6:
+        rating = "偏弱"
+    else:
+        rating = "差"
+
+    return {
+        "total": total,
+        "max": 30,
+        "breakdown": breakdown,
+        "notes": notes,
+        "rating": rating,
+    }
+
+
+# ============================================================
 # SECTION 5: Main Orchestrator
 # ============================================================
 
@@ -901,14 +1304,33 @@ def analyze_stock(code: str, days: int = 120, fetch_news: bool = False) -> dict:
     if len(closes) < 10:
         raise ValueError(f"Insufficient valid close prices for {code}")
 
-    # Calculate all indicators
+    # Calculate technical indicators
     ma = calc_ma(closes, [5, 10, 20, 60])
     macd = calc_macd(closes)
     rsi = calc_rsi(closes, [6, 12, 24])
     vol = calc_volume_analysis(volumes, closes)
     bias = calc_bias(closes, ma)
     support = calc_support(closes, ma)
-    score = calc_trend_score(ma, macd, rsi, vol, bias, support)
+    technical_raw = calc_trend_score(ma, macd, rsi, vol, bias, support)
+
+    # Calculate fundamental score (NEW)
+    fundamentals = raw.get("fundamentals", _empty_fundamentals())
+    fundamental = calc_fundamental_score(fundamentals)
+
+    # 3D composite score: technical 50 + fundamental 30 + news 20 (Claude fills)
+    tech_50 = round(technical_raw["total"] / 2, 1)
+    fund_30 = fundamental["total"]
+    subtotal_80 = round(tech_50 + fund_30, 1)
+
+    composite = {
+        "technical_50": tech_50,
+        "fundamental_30": fund_30,
+        "news_20": None,
+        "subtotal_80": subtotal_80,
+        "max_total": 100,
+        "weight_scheme": "technical 50% + fundamental 30% + news 20%",
+        "note": "news_20 待 Claude 根据消息面分析填入 0-20 分；最终总分 = technical_50 + fundamental_30 + news_20",
+    }
 
     # News search (optional)
     news = []
@@ -922,6 +1344,7 @@ def analyze_stock(code: str, days: int = 120, fetch_news: bool = False) -> dict:
         "name": raw.get("name", display),
         "data_source": raw.get("source", "unknown"),
         "realtime": raw.get("realtime", {}),
+        "fundamentals": fundamentals,
         "indicators": {
             "ma": ma,
             "macd": macd,
@@ -930,7 +1353,16 @@ def analyze_stock(code: str, days: int = 120, fetch_news: bool = False) -> dict:
             "bias": bias,
             "support": support,
         },
-        "trend_score": score,
+        "technical_score": {
+            "total_100": technical_raw["total"],
+            "total_50": tech_50,
+            "breakdown": technical_raw["breakdown"],
+            "signal_native": technical_raw["signal"],
+            "signal_cn_native": technical_raw["signal_cn"],
+        },
+        "fundamental_score": fundamental,
+        "composite_score": composite,
+        "trend_score": technical_raw,  # backward-compat
         "recent_bars": ohlcv[-10:],
         "total_bars": len(ohlcv),
         "fetch_time": datetime.now().isoformat(),
