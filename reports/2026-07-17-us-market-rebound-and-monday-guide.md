@@ -109,9 +109,54 @@
 
 ---
 
-## 五、一句话总结
+## 五、专题：WAIC 2026 与存储方向
+
+### WAIC 2026 正在进行时（7/17-7/20 上海）
+
+**大会今天（7/17）开幕，下周一（7/20）闭幕**——周一 A 股仍处在大会窗口期内。本届主题「智能伙伴，共创未来」，世博 / 张江 / 西岸三大片区，140+ 论坛、1100+ 企业、108 款芯片与 261 款大模型亮相，9 位图灵奖得主开讲。
+
+**与存储最相关的主线是「超节点 / 系统时代」**——国产算力从单卡竞争转向系统级集群竞争：
+
+| 展品 | 厂商 | 存储含义 |
+|------|------|---------|
+| Atlas 950 SuperPoD 超节点真机（现场 1024 张昇腾卡，整机 8192 颗昇腾 950DT，计划 2026Q4 上市） | 华为 | 单系统内存容量 / 互联带宽为关键指标 → HBM 与高密度 DRAM 需求放大器 |
+| 曙光 8000 scaleX 十万卡全国产 AI 超融合集群 | 中科曙光 | 集群级部署 → 企业级 SSD / 高性能存储配套需求 |
+| 真武 M890 × 磐久 AL128 超节点、OEX 超节点 | 阿里、中兴 | 同上，云厂商自研体系加速 |
+
+超节点密度越高，单系统吃掉的 HBM、DRAM、企业级 SSD 越多——**WAIC 的产业叙事对存储是结构性利好**。
+
+### 存储基本面：超级周期仍在强化
+
+- **DRAM**：Q3 合约价原厂通知上调 20-30%（三星计划通用 DRAM ASP 环比 +20%、LPDDR +20% 以上）；瑞银 7 月报告预计 Q3 报价 +32%、Q4 再 +18%；
+- **NAND**：威刚董事长透露将调涨 35-40%，合约价预估季增 10-15%；
+- **HBM**：全年产能缺口 50-60%，订单已排至 2027Q1；HBM4 单价或从 ~$2/Gb 升至 $4-5/Gb（2026 下半年）；SK 海力士 CEO 称行业正走向「史上最严重供应短缺」，2027 年最紧张；
+- **业绩验证**：美光 6/24 财报营收 $414.6 亿超预期 18%，下季指引 $500 亿；A 股中报预告——江波龙净利预增 622-743 倍（92-110 亿）、佰维存储预增 3200%+（70-75 亿）、德明利约 50 倍。
+
+### 但股价在讲另一个故事：拥挤交易的暴力去杠杆
+
+| 市场 | 近期表现 |
+|------|---------|
+| A 股（7/17 收盘） | **兆易创新连续两日跌停**（463.15 元）；佰维存储 **-15.78%**（成交 135.7 亿）；江波龙 **-9.38%**——均为业绩预告暴增后的「利好兑现」式砸盘，叠加高位杠杆资金去杠杆 |
+| 美股（本周） | SK 海力士周二 +27% → 周三 -5% 上蹿下跳；美光/闪迪/西数今晚早盘一度跌 6-8% 随大盘收窄；另有加州集体诉讼指控三星/海力士/美光协同限供抬价（DRAM 四年涨 700%）——头部买家开始讨论「省着用内存」 |
+
+**矛盾的本质**：基本面（涨价周期）没有任何恶化，恶化的是**筹码结构**——板块前期集体创历史新高、涨幅透支了短期利好，业绩预告落地后没有新催化，资金选择兑现。这是典型的「周期上行途中的高位换手」，不是周期见顶。
+
+### 存储方向下周一操作指引
+
+1. **不接飞刀**：跌停链中的标的（兆易、佰维）在出现「缩量企稳 + 不创新低」之前不介入；放量长阴后的第一根阳线往往只是反抽；
+2. **今晚美股是先行指标**：盯美光 / 闪迪 / 西数收盘能否跟随大盘收窄跌幅——若收复大部分跌幅，周一 A 股存储情绪修复的概率明显上升；
+3. **WAIC 闭幕日（周一）留意事件催化**：华为超节点订单落地、国产 HBM / 企业级 SSD 相关发布，可能成为超跌反弹的引信，但**事件驱动只做短线，不作为加仓依据**（本轮资金恰恰是「卖 WAIC 预期」离场的）；
+4. **持仓者**：利用反抽降杠杆、降到无杠杆或轻杠杆水平；破前低无条件执行止损；
+5. **长线视角**：涨价至少排到 Q3-Q4、HBM 排到 2027，产业周期未变——深度回调是分批布局机会，但下一个硬催化剂要等 8 月中报正式披露 + Q3 涨价落地，中间是「真空期 + 高波动」，分批节奏放慢、给足回撤空间；
+6. **替代思路**：若想要同样的周期贝塔但更低的估值弹性风险，美股美光（FQ4 指引 $500 亿、PE 显著低于 A 股对标）比 A 股高位标的的风险收益比更好。
+
+---
+
+## 六、一句话总结
 
 > 今晚是「芯片熊市线上的技术性抄底反弹」，性质是超跌修复而非反转。下周一顺势而不追高：周末平静则持股观望、看确认信号；利空落地则守 7,400；无论哪种，周三特斯拉 / Alphabet 财报前把科技仓位降到可承受水平——那才是下周真正的裁决日。
+>
+> 存储方向：产业周期（涨价 / HBM 短缺 / WAIC 超节点叙事）没坏，坏的是筹码结构。跌停链未止、缩量企稳未现之前不接飞刀；今晚美光 / 闪迪的收盘就是周一 A 股存储的先行指标。
 
 ---
 
@@ -127,3 +172,18 @@
 - [investinglive — Earnings week ahead: Alphabet and Tesla are the headliners](https://investinglive.com/stocks/earnings-week-ahead-alphabet-and-tesla-are-the-headliners)
 - [CentralBank.watch — Fed Rate Probability 2026](https://centralbank.watch/federal-reserve/)
 - [Schwab Market Update — Falling Chips, Rising Oil, Netflix All Weigh Early](https://www.schwab.com/learn/story/stock-market-update-open)
+
+**WAIC 与存储专题来源**
+
+- [人民网 — 2026世界人工智能大会将于7月17日至20日在上海举行](http://sh.people.com.cn/n2/2026/0617/c134768-41613724.html)
+- [新浪科技 — 2026WAIC十大看点：国产芯片全阵容亮相](https://finance.sina.com.cn/tech/roll/2026-07-17/doc-iniiccvc8297138.shtml)
+- [21财经 — WAIC上的算力重器：华为昇腾950超节点真机现身](https://m.21jingji.com/article/20260717/herald/5ad90b573648444c183fea4752a207e8.html)
+- [36氪 — 108款芯片、261款大模型亮相，9位图灵奖得主开讲](https://eu.36kr.com/zh/p/3896827901200259)
+- [新浪财经 — 存储芯片迎涨价周期](https://finance.sina.com.cn/jjxw/2026-07-07/doc-inifxpii1621357.shtml)
+- [新浪财经 — 涨价！存储芯片"供应严重短缺"，国际投行最新发声](https://finance.sina.com.cn/stock/marketresearch/2026-07-05/doc-iniftmtc9522859.shtml)
+- [新浪财经 — 价格翻倍！利好突袭：存储芯片传来大消息](https://finance.sina.com.cn/wm/2026-07-12/doc-inihpchi4704480.shtml)
+- [新浪科技 — 存储暴涨厂商进入印钞模式：江波龙净利增622倍、德明利50倍、佰维30倍](https://finance.sina.com.cn/tech/roll/2026-07-16/doc-inihyiyh4514905.shtml)
+- [21财经 — 存储牛股业绩炸裂，资金却接连砸盘](https://m.21jingji.com/article/20260717/herald/30c7eee8df0e863aa05a4c5909369ce2.html)
+- [中华网 — A股存储一哥连吃两个跌停 科技板块集体跳水](https://news.china.com/socialgd/10000169/20260717/49617547.html)
+- [24/7 Wall St. — Micron, SanDisk, Western Digital Fall 6% as SK Hynix's Weak Outlook Rattles Memory Stocks](https://247wallst.com/investing/2026/07/13/micron-sandisk-western-digital-fall-6-as-sk-hynixs-weak-outlook-rattles-memory-stocks/)
+- [Yahoo Finance — Micron Drops 8%, SanDisk Slumps 10%, Western Digital Falls 7% as Memory Stocks Pull Back](https://finance.yahoo.com/markets/stocks/articles/micron-drops-8-sandisk-slumps-152105195.html)
