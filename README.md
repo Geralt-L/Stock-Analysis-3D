@@ -277,11 +277,20 @@ Stock-Analysis-3D/
 ├── README.md                          # 本文件
 ├── NOTICE.md                          # 致谢 + 改造说明
 ├── LICENSE                            # MIT（双版权：原作者 + 本 fork）
-└── references/
-    ├── stock_data_fetcher.py          # 取数据 + 算指标 + 评分（~1170 行）
-    ├── analysis-prompt-template.md    # AI 分析框架（保留原版）
-    └── output-format-template.md      # 3D 决策看板模板（v2.0 重写）
+├── references/
+│   ├── stock_data_fetcher.py          # 取数据 + 算指标 + 评分（~1170 行）
+│   ├── analysis-prompt-template.md    # AI 分析框架（保留原版）
+│   └── output-format-template.md      # 3D 决策看板模板（v2.0 重写）
+├── notes/                             # 📒 投研笔记（统一命名 YYYY-MM-DD_主题.md）
+│   ├── INDEX.md                       # 笔记索引 + 复盘状态
+│   └── TEMPLATE.md                    # 笔记模板
+└── .claude/skills/research-notes/
+    └── SKILL.md                       # 投研笔记 Skill（记笔记/存档/复盘 触发）
 ```
+
+### 📒 投研笔记 Skill（research-notes）
+
+每次投研分析后说「记笔记 / 存档 / 整理成文件」即可自动归档到 `notes/`：统一命名、强制附带一句话结论 + 验证点 + 失效条件，并维护 `INDEX.md` 索引；说「复盘」则自动核实历史笔记的验证点并更新状态（兑现 ✔️ / 失效 ⛔）。详见 [.claude/skills/research-notes/SKILL.md](.claude/skills/research-notes/SKILL.md)。
 
 ---
 
