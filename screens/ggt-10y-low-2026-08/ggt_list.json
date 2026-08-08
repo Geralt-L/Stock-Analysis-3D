@@ -1,0 +1,3822 @@
+[
+ {
+  "code": "00001",
+  "name": "CK HUTCHISON HOLDINGS LIMITED"
+ },
+ {
+  "code": "00002",
+  "name": "CLP HOLDINGS LIMITED"
+ },
+ {
+  "code": "00003",
+  "name": "HONG KONG AND CHINA GAS COMPANY LIMITED, THE"
+ },
+ {
+  "code": "00004",
+  "name": "WHARF (HOLDINGS) LIMITED, THE"
+ },
+ {
+  "code": "00005",
+  "name": "HSBC HOLDINGS PLC"
+ },
+ {
+  "code": "00006",
+  "name": "POWER ASSETS HOLDINGS LIMITED"
+ },
+ {
+  "code": "00008",
+  "name": "PCCW LIMITED"
+ },
+ {
+  "code": "00010",
+  "name": "HANG LUNG GROUP LIMITED"
+ },
+ {
+  "code": "00012",
+  "name": "HENDERSON LAND DEVELOPMENT CO LTD"
+ },
+ {
+  "code": "00013",
+  "name": "HUTCHMED (CHINA) LIMITED"
+ },
+ {
+  "code": "00014",
+  "name": "HYSAN DEVELOPMENT COMPANY LIMITED"
+ },
+ {
+  "code": "00016",
+  "name": "SUN HUNG KAI PROPERTIES LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "00017",
+  "name": "NEW WORLD DEVELOPMENT CO LTD"
+ },
+ {
+  "code": "00019",
+  "name": "SWIRE PACIFIC LTD 'A'"
+ },
+ {
+  "code": "00020",
+  "name": "SENSETIME GROUP INC. -HKD TRADED SHARES"
+ },
+ {
+  "code": "00023",
+  "name": "BANK OF EAST ASIA LTD"
+ },
+ {
+  "code": "00027",
+  "name": "GALAXY ENTERTAINMENT GROUP LIMITED"
+ },
+ {
+  "code": "00035",
+  "name": "FAR EAST CONSORTIUM INTERNATIONAL LTD"
+ },
+ {
+  "code": "00038",
+  "name": "FIRST TRACTOR COMPANY LIMITED"
+ },
+ {
+  "code": "00041",
+  "name": "GREAT EAGLE HOLDINGS LIMITED"
+ },
+ {
+  "code": "00042",
+  "name": "NORTHEAST ELECTRIC DEVELOPMENT COMPANY LIMITED"
+ },
+ {
+  "code": "00045",
+  "name": "HONGKONG AND SHANGHAI HOTELS LTD,THE"
+ },
+ {
+  "code": "00059",
+  "name": "SKYFAME REALTY (HOLDINGS) LIMITED"
+ },
+ {
+  "code": "00066",
+  "name": "MTR CORPORATION LIMITED"
+ },
+ {
+  "code": "00069",
+  "name": "SHANGRI-LA ASIA LIMITED"
+ },
+ {
+  "code": "00081",
+  "name": "CHINA OVERSEAS GRAND OCEANS GROUP LIMITED"
+ },
+ {
+  "code": "00083",
+  "name": "SINO LAND CO.LTD."
+ },
+ {
+  "code": "00086",
+  "name": "SUN HUNG KAI & CO.LTD"
+ },
+ {
+  "code": "00087",
+  "name": "SWIRE PACIFIC LTD 'B'"
+ },
+ {
+  "code": "00095",
+  "name": "LVGEM (CHINA) REAL ESTATE INVESTMENT COMPANY LIMITED"
+ },
+ {
+  "code": "00101",
+  "name": "HANG LUNG PROPERTIES LIMITED"
+ },
+ {
+  "code": "00107",
+  "name": "SICHUAN EXPRESSWAY COMPANY LIMITED"
+ },
+ {
+  "code": "00116",
+  "name": "CHOW SANG SANG HOLDINGS INTERNATIONAL LIMITED"
+ },
+ {
+  "code": "00119",
+  "name": "POLY PROPERTY GROUP CO., LIMITED"
+ },
+ {
+  "code": "00120",
+  "name": "COSMOPOLITAN INTERNATIONAL HOLDINGS LTD"
+ },
+ {
+  "code": "00123",
+  "name": "YUEXIU PROPERTY COMPANY LIMITED"
+ },
+ {
+  "code": "00124",
+  "name": "GUANGDONG LAND HOLDINGS LIMITED"
+ },
+ {
+  "code": "00127",
+  "name": "CHINESE ESTATES HOLDINGS LIMITED"
+ },
+ {
+  "code": "00135",
+  "name": "KUNLUN ENERGY COMPANY LIMITED"
+ },
+ {
+  "code": "00136",
+  "name": "CHINA RUYI HOLDINGS LIMITED"
+ },
+ {
+  "code": "00142",
+  "name": "FIRST PACIFIC CO. LTD."
+ },
+ {
+  "code": "00144",
+  "name": "CHINA MERCHANTS PORT HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "00148",
+  "name": "KINGBOARD HOLDINGS LIMITED"
+ },
+ {
+  "code": "00151",
+  "name": "WANT WANT CHINA HOLDINGS LIMITED"
+ },
+ {
+  "code": "00152",
+  "name": "SHENZHEN INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00163",
+  "name": "EMPEROR INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00165",
+  "name": "CHINA EVERBRIGHT LIMITED"
+ },
+ {
+  "code": "00168",
+  "name": "TSINGTAO BREWERY COMPANY LIMITED"
+ },
+ {
+  "code": "00173",
+  "name": "K. WAH INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00175",
+  "name": "GEELY AUTOMOBILE HOLDINGS LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "00177",
+  "name": "JIANGSU EXPRESSWAY COMPANY LIMITED"
+ },
+ {
+  "code": "00178",
+  "name": "SA SA INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00179",
+  "name": "JOHNSON ELECTRIC HOLDINGS LIMITED"
+ },
+ {
+  "code": "00185",
+  "name": "ZENSUN ENTERPRISES LIMITED"
+ },
+ {
+  "code": "00187",
+  "name": "BEIJING JINGCHENG MACHINERY ELECTRIC COMPANY LIMITED"
+ },
+ {
+  "code": "00189",
+  "name": "DONGYUE GROUP LIMITED"
+ },
+ {
+  "code": "00200",
+  "name": "MELCO INTERNATIONAL DEVELOPMENT LIMITED"
+ },
+ {
+  "code": "00215",
+  "name": "HUTCHISON TELECOMMUNICATIONS HONG KONG HOLDINGS LIMITED"
+ },
+ {
+  "code": "00220",
+  "name": "UNI-PRESIDENT CHINA HOLDINGS LTD."
+ },
+ {
+  "code": "00241",
+  "name": "ALIBABA HEALTH INFORMATION TECHNOLOGY LIMITED"
+ },
+ {
+  "code": "00242",
+  "name": "SHUN TAK HOLDINGS LIMITED"
+ },
+ {
+  "code": "00245",
+  "name": "CHINA VERED FINANCIAL HOLDING CORPORATION LIMITED"
+ },
+ {
+  "code": "00256",
+  "name": "CITYCHAMP WATCH & JEWELLERY GROUP LIMITED"
+ },
+ {
+  "code": "00257",
+  "name": "CHINA EVERBRIGHT ENVIRONMENT GROUP LIMITED"
+ },
+ {
+  "code": "00267",
+  "name": "CITIC LIMITED"
+ },
+ {
+  "code": "00268",
+  "name": "KINGDEE INTERNATIONAL SOFTWARE GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "00270",
+  "name": "GUANGDONG INVESTMENT LIMITED"
+ },
+ {
+  "code": "00272",
+  "name": "SHUI ON LAND LIMITED"
+ },
+ {
+  "code": "00279",
+  "name": "ARTA TECHFIN CORPORATION LIMITED"
+ },
+ {
+  "code": "00285",
+  "name": "BYD ELECTRONIC (INTERNATIONAL) COMPANY LIMITED"
+ },
+ {
+  "code": "00288",
+  "name": "WH GROUP LIMITED"
+ },
+ {
+  "code": "00290",
+  "name": "GOFINTECH QUANTUM INNOVATION LIMITED"
+ },
+ {
+  "code": "00291",
+  "name": "CHINA RESOURCES BEER (HOLDINGS) COMPANY LIMITED-HKD TRADED SHARES"
+ },
+ {
+  "code": "00293",
+  "name": "CATHAY PACIFIC AIRWAYS LTD"
+ },
+ {
+  "code": "00295",
+  "name": "KONG SUN HOLDINGS LIMITED"
+ },
+ {
+  "code": "00296",
+  "name": "EMPEROR ENTERTAINMENT HOTEL LIMITED"
+ },
+ {
+  "code": "00297",
+  "name": "SINOFERT HOLDINGS LIMITED"
+ },
+ {
+  "code": "00299",
+  "name": "GLORY SUN LAND GROUP LIMITED"
+ },
+ {
+  "code": "00300",
+  "name": "MIDEA GROUP CO., LTD."
+ },
+ {
+  "code": "00302",
+  "name": "CMGE TECHNOLOGY GROUP LIMITED"
+ },
+ {
+  "code": "00303",
+  "name": "VTECH HOLDINGS LIMITED"
+ },
+ {
+  "code": "00308",
+  "name": "CHINA TRAVEL INTERNATIONAL INVESTMENT HONG KONG LIMITED"
+ },
+ {
+  "code": "00314",
+  "name": "SIPAI HEALTH TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "00315",
+  "name": "SMARTONE TELECOMMUNICATIONS HOLDINGS LIMITED"
+ },
+ {
+  "code": "00316",
+  "name": "ORIENT OVERSEAS (INTERNATIONAL) LIMITED"
+ },
+ {
+  "code": "00317",
+  "name": "CSSC OFFSHORE & MARINE ENGINEERING (GROUP) COMPANY LIMITED"
+ },
+ {
+  "code": "00321",
+  "name": "TEXWINCA HOLDINGS LIMITED"
+ },
+ {
+  "code": "00322",
+  "name": "TINGYI (CAYMAN ISLANDS) HOLDING CORP."
+ },
+ {
+  "code": "00323",
+  "name": "MAANSHAN IRON & STEEL COMPANY LIMITED"
+ },
+ {
+  "code": "00325",
+  "name": "BLOKS GROUP LIMITED"
+ },
+ {
+  "code": "00327",
+  "name": "PAX GLOBAL TECHNOLOGY LIMITED"
+ },
+ {
+  "code": "00330",
+  "name": "ESPRIT HOLDINGS LIMITED"
+ },
+ {
+  "code": "00336",
+  "name": "HUABAO INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00337",
+  "name": "GREENLAND HONG KONG HOLDINGS LIMITED"
+ },
+ {
+  "code": "00338",
+  "name": "SINOPEC SHANGHAI PETROCHEMICAL COMPANY LIMITED"
+ },
+ {
+  "code": "00341",
+  "name": "CAFE DE CORAL HOLDINGS LTD"
+ },
+ {
+  "code": "00345",
+  "name": "VITASOY INTERNATIONAL HOLDINGS LTD"
+ },
+ {
+  "code": "00347",
+  "name": "ANGANG STEEL COMPANY LIMITED"
+ },
+ {
+  "code": "00354",
+  "name": "CHINASOFT INTERNATIONAL LIMITED"
+ },
+ {
+  "code": "00358",
+  "name": "JIANGXI COPPER COMPANY LIMITED"
+ },
+ {
+  "code": "00363",
+  "name": "SHANGHAI INDUSTRIAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00371",
+  "name": "BEIJING ENTERPRISES WATER GROUP LIMITED"
+ },
+ {
+  "code": "00384",
+  "name": "CHINA GAS HOLDINGS LIMITED"
+ },
+ {
+  "code": "00386",
+  "name": "CHINA PETROLEUM & CHEMICAL CORPORATION"
+ },
+ {
+  "code": "00388",
+  "name": "HONG KONG EXCHANGES AND CLEARING LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "00390",
+  "name": "CHINA RAILWAY GROUP LIMITED"
+ },
+ {
+  "code": "00392",
+  "name": "BEIJING ENTERPRISES HOLDINGS LIMITED"
+ },
+ {
+  "code": "00400",
+  "name": "INGDAN, INC."
+ },
+ {
+  "code": "00405",
+  "name": "YUEXIU REAL ESTATE INVESTMENT TRUST"
+ },
+ {
+  "code": "00410",
+  "name": "SOHO CHINA LIMITED"
+ },
+ {
+  "code": "00412",
+  "name": "SHANDONG HI-SPEED HOLDINGS GROUP LIMITED"
+ },
+ {
+  "code": "00419",
+  "name": "HONY MEDIA GROUP"
+ },
+ {
+  "code": "00425",
+  "name": "MINTH GROUP LIMITED"
+ },
+ {
+  "code": "00432",
+  "name": "PACIFIC CENTURY PREMIUM DEVELOPMENTS LIMITED"
+ },
+ {
+  "code": "00439",
+  "name": "GENESIS SCALE HOLDINGS LIMITED"
+ },
+ {
+  "code": "00440",
+  "name": "DAH SING FINANCIAL HOLDINGS LTD"
+ },
+ {
+  "code": "00451",
+  "name": "DYNASTY DIGITAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00460",
+  "name": "SIHUAN PHARMACEUTICAL HOLDINGS GROUP LTD."
+ },
+ {
+  "code": "00467",
+  "name": "UNITED ENERGY GROUP LIMITED"
+ },
+ {
+  "code": "00468",
+  "name": "GREATVIEW ASEPTIC PACKAGING COMPANY LIMITED"
+ },
+ {
+  "code": "00470",
+  "name": "WUXI LEAD INTELLIGENT EQUIPMENT CO., LTD."
+ },
+ {
+  "code": "00480",
+  "name": "HKR INTERNATIONAL LTD"
+ },
+ {
+  "code": "00488",
+  "name": "LAI SUN DEVELOPMENT COMPANY LIMITED"
+ },
+ {
+  "code": "00493",
+  "name": "GOME RETAIL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00496",
+  "name": "KASEN INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00501",
+  "name": "OMNIVISION INTEGRATED CIRCUITS GROUP, INC."
+ },
+ {
+  "code": "00506",
+  "name": "CHINA FOODS LIMITED"
+ },
+ {
+  "code": "00508",
+  "name": "DINGYI GROUP INVESTMENT LIMITED"
+ },
+ {
+  "code": "00511",
+  "name": "TVB LIMITED"
+ },
+ {
+  "code": "00512",
+  "name": "GRAND PHARMACEUTICAL GROUP LIMITED"
+ },
+ {
+  "code": "00517",
+  "name": "COSCO SHIPPING INTERNATIONAL (HONG KONG) CO., LTD."
+ },
+ {
+  "code": "00520",
+  "name": "XIABUXIABU CATERING MANAGEMENT (CHINA) HOLDINGS CO., LTD."
+ },
+ {
+  "code": "00522",
+  "name": "ASMPT LIMITED"
+ },
+ {
+  "code": "00525",
+  "name": "GUANGSHEN RAILWAY COMPANY LIMITED"
+ },
+ {
+  "code": "00535",
+  "name": "GEMDALE PROPERTIES AND INVESTMENT CORPORATION LIMITED"
+ },
+ {
+  "code": "00537",
+  "name": "RIGOL TECHNOLOGIES CO., LTD."
+ },
+ {
+  "code": "00546",
+  "name": "FUFENG GROUP LIMITED"
+ },
+ {
+  "code": "00547",
+  "name": "DIGITAL DOMAIN HOLDINGS LIMITED"
+ },
+ {
+  "code": "00548",
+  "name": "SHENZHEN EXPRESSWAY CORPORATION LIMITED"
+ },
+ {
+  "code": "00551",
+  "name": "YUE YUEN INDUSTRIAL (HOLDINGS) LIMITED"
+ },
+ {
+  "code": "00552",
+  "name": "CHINA COMMUNICATIONS SERVICES CORPORATION LIMITED"
+ },
+ {
+  "code": "00553",
+  "name": "NANJING PANDA ELECTRONICS COMPANY LIMITED"
+ },
+ {
+  "code": "00558",
+  "name": "L.K. TECHNOLOGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "00563",
+  "name": "SHANGHAI INDUSTRIAL URBAN DEVELOPMENT GROUP LIMITED"
+ },
+ {
+  "code": "00564",
+  "name": "ZCZL INDUSTRIAL TECHNOLOGY GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "00568",
+  "name": "SHANDONG MOLONG PETROLEUM MACHINERY COMPANY LIMITED"
+ },
+ {
+  "code": "00570",
+  "name": "CHINA TRADITIONAL CHINESE MEDICINE HOLDINGS CO LIMITED"
+ },
+ {
+  "code": "00576",
+  "name": "ZHEJIANG EXPRESSWAY CO., LTD."
+ },
+ {
+  "code": "00579",
+  "name": "BEIJING JINGNENG CLEAN ENERGY CO., LIMITED"
+ },
+ {
+  "code": "00581",
+  "name": "CHINA ORIENTAL GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "00582",
+  "name": "SHIN HWA WORLD LIMITED"
+ },
+ {
+  "code": "00586",
+  "name": "CHINA CONCH VENTURE HOLDINGS LIMITED"
+ },
+ {
+  "code": "00587",
+  "name": "CHINA CONCH ENVIRONMENT PROTECTION HOLDINGS LIMITED"
+ },
+ {
+  "code": "00588",
+  "name": "BEIJING NORTH STAR COMPANY LIMITED"
+ },
+ {
+  "code": "00590",
+  "name": "LUK FOOK HOLDINGS (INTERNATIONAL) LIMITED"
+ },
+ {
+  "code": "00598",
+  "name": "SINOTRANS LIMITED"
+ },
+ {
+  "code": "00604",
+  "name": "SHENZHEN INVESTMENT LIMITED"
+ },
+ {
+  "code": "00607",
+  "name": "FULLSHARE HOLDINGS LIMITED"
+ },
+ {
+  "code": "00612",
+  "name": "CARMEN CENTURY INVESTMENT LIMITED"
+ },
+ {
+  "code": "00631",
+  "name": "SANY HEAVY EQUIPMENT INTERNATIONAL HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "00636",
+  "name": "KLN LOGISTICS GROUP LIMITED"
+ },
+ {
+  "code": "00638",
+  "name": "FIBOCOM WIRELESS INC."
+ },
+ {
+  "code": "00639",
+  "name": "SHOUGANG FUSHAN RESOURCES GROUP LIMITED"
+ },
+ {
+  "code": "00650",
+  "name": "PRODUCTIVE TECHNOLOGIES COMPANY LIMITED"
+ },
+ {
+  "code": "00656",
+  "name": "FOSUN INTERNATIONAL LIMITED"
+ },
+ {
+  "code": "00658",
+  "name": "CHINA HIGH SPEED TRANSMISSION EQUIPMENT GROUP CO., LTD."
+ },
+ {
+  "code": "00659",
+  "name": "CTF SERVICES LIMITED"
+ },
+ {
+  "code": "00666",
+  "name": "REPT BATTERO ENERGY CO., LTD."
+ },
+ {
+  "code": "00667",
+  "name": "CHINA EAST EDUCATION HOLDINGS LIMITED"
+ },
+ {
+  "code": "00668",
+  "name": "ANKER INNOVATIONS TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "00669",
+  "name": "TECHTRONIC INDUSTRIES CO. LTD."
+ },
+ {
+  "code": "00670",
+  "name": "CHINA EASTERN AIRLINES CORPORATION LIMITED"
+ },
+ {
+  "code": "00683",
+  "name": "KERRY PROPERTIES LIMITED"
+ },
+ {
+  "code": "00686",
+  "name": "BEIJING ENERGY INTERNATIONAL HOLDING CO., LTD"
+ },
+ {
+  "code": "00687",
+  "name": "TYSAN HOLDINGS LIMITED"
+ },
+ {
+  "code": "00688",
+  "name": "CHINA OVERSEAS LAND & INVESTMENT LIMITED"
+ },
+ {
+  "code": "00691",
+  "name": "CHINA SHANSHUI CEMENT GROUP LIMITED"
+ },
+ {
+  "code": "00694",
+  "name": "BEIJING CAPITAL INTERNATIONAL AIRPORT COMPANY LIMITED"
+ },
+ {
+  "code": "00696",
+  "name": "TRAVELSKY TECHNOLOGY LIMITED"
+ },
+ {
+  "code": "00697",
+  "name": "SHOUCHENG HOLDINGS LIMITED"
+ },
+ {
+  "code": "00698",
+  "name": "TONGDA GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "00699",
+  "name": "NINGBO JOYSON ELECTRONIC CORP."
+ },
+ {
+  "code": "00700",
+  "name": "TENCENT HOLDINGS LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "00709",
+  "name": "GIORDANO INTERNATIONAL LIMITED"
+ },
+ {
+  "code": "00710",
+  "name": "BOE VARITRONIX LIMITED"
+ },
+ {
+  "code": "00718",
+  "name": "TAI UNITED HOLDINGS LIMITED"
+ },
+ {
+  "code": "00719",
+  "name": "SHANDONG XINHUA PHARMACEUTICAL COMPANY LIMITED"
+ },
+ {
+  "code": "00721",
+  "name": "CHINA FINANCIAL INTERNATIONAL INVESTMENTS LIMITED"
+ },
+ {
+  "code": "00728",
+  "name": "CHINA TELECOM CORPORATION LIMITED"
+ },
+ {
+  "code": "00732",
+  "name": "TRULY INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00737",
+  "name": "SZ INVESTMENT HLDGS BAY AREA DEV CO LTD -HKD TRADED SHARES"
+ },
+ {
+  "code": "00743",
+  "name": "ASIA CEMENT (CHINA) HOLDINGS CORPORATION"
+ },
+ {
+  "code": "00751",
+  "name": "SKYWORTH GROUP LIMITED"
+ },
+ {
+  "code": "00753",
+  "name": "AIR CHINA LIMITED"
+ },
+ {
+  "code": "00754",
+  "name": "HOPSON DEVELOPMENT HOLDINGS LIMITED"
+ },
+ {
+  "code": "00762",
+  "name": "CHINA UNICOM (HONG KONG) LIMITED"
+ },
+ {
+  "code": "00763",
+  "name": "ZTE CORPORATION"
+ },
+ {
+  "code": "00772",
+  "name": "CHINA LITERATURE LIMITED"
+ },
+ {
+  "code": "00775",
+  "name": "CK LIFE SCIENCES INT'L., (HOLDINGS) INC."
+ },
+ {
+  "code": "00777",
+  "name": "NETDRAGON WEBSOFT HOLDINGS LIMITED"
+ },
+ {
+  "code": "00780",
+  "name": "TONGCHENG TRAVEL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00788",
+  "name": "CHINA TOWER CORPORATION LIMITED"
+ },
+ {
+  "code": "00799",
+  "name": "IGG INC"
+ },
+ {
+  "code": "00800",
+  "name": "WERIDE INC."
+ },
+ {
+  "code": "00806",
+  "name": "VALUE PARTNERS GROUP LIMITED"
+ },
+ {
+  "code": "00811",
+  "name": "XINHUA WINSHARE PUBLISHING AND MEDIA CO., LTD."
+ },
+ {
+  "code": "00813",
+  "name": "SHIMAO GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "00816",
+  "name": "JINMAO PROPERTY SERVICES CO., LIMITED"
+ },
+ {
+  "code": "00817",
+  "name": "CHINA JINMAO HOLDINGS GROUP LIMITED"
+ },
+ {
+  "code": "00819",
+  "name": "TIANNENG POWER INTERNATIONAL LIMITED"
+ },
+ {
+  "code": "00826",
+  "name": "TIANGONG INTERNATIONAL COMPANY LIMITED"
+ },
+ {
+  "code": "00829",
+  "name": "SHENGUAN HOLDINGS (GROUP) LIMITED"
+ },
+ {
+  "code": "00832",
+  "name": "CENTRAL CHINA REAL ESTATE LIMITED"
+ },
+ {
+  "code": "00836",
+  "name": "CHINA RESOURCES POWER HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "00839",
+  "name": "CHINA EDUCATION GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "00845",
+  "name": "GLORIOUS PROPERTY HOLDINGS LIMITED"
+ },
+ {
+  "code": "00846",
+  "name": "MINGFA GROUP (INTERNATIONAL) COMPANY LIMITED"
+ },
+ {
+  "code": "00853",
+  "name": "MICROPORT SCIENTIFIC CORPORATION"
+ },
+ {
+  "code": "00855",
+  "name": "CHINA WATER AFFAIRS GROUP LIMITED"
+ },
+ {
+  "code": "00856",
+  "name": "VSTECS HOLDINGS LIMITED"
+ },
+ {
+  "code": "00857",
+  "name": "PETROCHINA COMPANY LIMITED"
+ },
+ {
+  "code": "00860",
+  "name": "APOLLO FUTURE MOBILITY GROUP LIMITED"
+ },
+ {
+  "code": "00861",
+  "name": "DIGITAL CHINA HOLDINGS LIMITED"
+ },
+ {
+  "code": "00867",
+  "name": "CHINA MEDICAL SYSTEM HOLDINGS LIMITED"
+ },
+ {
+  "code": "00868",
+  "name": "XINYI GLASS HOLDINGS LIMITED"
+ },
+ {
+  "code": "00873",
+  "name": "SHIMAO SERVICES HOLDINGS LIMITED"
+ },
+ {
+  "code": "00874",
+  "name": "GUANGZHOU BAIYUNSHAN PHARMACEUTICAL HOLDINGS CO., LTD."
+ },
+ {
+  "code": "00880",
+  "name": "SJM HOLDINGS LIMITED"
+ },
+ {
+  "code": "00881",
+  "name": "ZHONGSHENG GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "00883",
+  "name": "CNOOC LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "00884",
+  "name": "CIFI HOLDINGS (GROUP) CO. LTD."
+ },
+ {
+  "code": "00895",
+  "name": "DONGJIANG ENVIRONMENTAL COMPANY LIMITED"
+ },
+ {
+  "code": "00902",
+  "name": "HUANENG POWER INTERNATIONAL, INC."
+ },
+ {
+  "code": "00909",
+  "name": "MING YUAN CLOUD GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "00911",
+  "name": "QIANHAI HEALTH HOLDINGS LIMITED"
+ },
+ {
+  "code": "00914",
+  "name": "ANHUI CONCH CEMENT COMPANY LIMITED"
+ },
+ {
+  "code": "00916",
+  "name": "CHINA LONGYUAN POWER GROUP CORPORATION LIMITED"
+ },
+ {
+  "code": "00917",
+  "name": "QUNABOX GROUP LIMITED"
+ },
+ {
+  "code": "00921",
+  "name": "HISENSE HOME APPLIANCES GROUP CO., LTD."
+ },
+ {
+  "code": "00931",
+  "name": "CHINA HK POWER SMART ENERGY GROUP LIMITED"
+ },
+ {
+  "code": "00933",
+  "name": "VIVA GOODS COMPANY LIMITED"
+ },
+ {
+  "code": "00934",
+  "name": "SINOPEC KANTONS HOLDINGS LIMITED"
+ },
+ {
+  "code": "00939",
+  "name": "CHINA CONSTRUCTION BANK CORPORATION"
+ },
+ {
+  "code": "00941",
+  "name": "CHINA MOBILE LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "00950",
+  "name": "LEE'S PHARMACEUTICAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00951",
+  "name": "CHAOWEI POWER HOLDINGS LIMITED"
+ },
+ {
+  "code": "00956",
+  "name": "CHINA SUNTIEN GREEN ENERGY CORPORATION LIMITED"
+ },
+ {
+  "code": "00960",
+  "name": "LONGFOR GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "00966",
+  "name": "CHINA TAIPING INSURANCE HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "00968",
+  "name": "XINYI SOLAR HOLDINGS LIMITED"
+ },
+ {
+  "code": "00975",
+  "name": "MONGOLIAN MINING CORPORATION"
+ },
+ {
+  "code": "00976",
+  "name": "CHIHO ENVIRONMENTAL GROUP LIMITED"
+ },
+ {
+  "code": "00978",
+  "name": "CHINA MERCHANTS LAND LIMITED"
+ },
+ {
+  "code": "00981",
+  "name": "SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION"
+ },
+ {
+  "code": "00989",
+  "name": "CHINA CHANGBAISHAN INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "00990",
+  "name": "DEEP SOURCE HOLDINGS LIMITED"
+ },
+ {
+  "code": "00991",
+  "name": "DATANG INTERNATIONAL POWER GENERATION CO.,LTD."
+ },
+ {
+  "code": "00992",
+  "name": "LENOVO GROUP LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "00995",
+  "name": "ANHUI EXPRESSWAY COMPANY LIMITED"
+ },
+ {
+  "code": "00998",
+  "name": "CHINA CITIC BANK CORPORATION LIMITED"
+ },
+ {
+  "code": "00999",
+  "name": "XIAOCAIYUAN INTERNATIONAL HOLDING LTD."
+ },
+ {
+  "code": "01024",
+  "name": "KUAISHOU TECHNOLOGY -HKD TRADED SHARES"
+ },
+ {
+  "code": "01028",
+  "name": "C.BANNER INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01030",
+  "name": "SEAZEN GROUP LIMITED"
+ },
+ {
+  "code": "01033",
+  "name": "SINOPEC OILFIELD SERVICE CORPORATION"
+ },
+ {
+  "code": "01038",
+  "name": "CK INFRASTRUCTURE HOLDINGS LIMITED"
+ },
+ {
+  "code": "01044",
+  "name": "HENGAN INTERNATIONAL GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "01052",
+  "name": "YUEXIU TRANSPORT INFRASTRUCTURE LIMITED"
+ },
+ {
+  "code": "01053",
+  "name": "CHONGQING IRON & STEEL COMPANY LIMITED"
+ },
+ {
+  "code": "01055",
+  "name": "CHINA SOUTHERN AIRLINES COMPANY LIMITED"
+ },
+ {
+  "code": "01057",
+  "name": "ZHEJIANG SHIBAO COMPANY LIMITED"
+ },
+ {
+  "code": "01060",
+  "name": "DAMAI ENTERTAINMENT HOLDINGS LIMITED"
+ },
+ {
+  "code": "01065",
+  "name": "TIANJIN CAPITAL ENVIRONMENTAL PROTECTION GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "01066",
+  "name": "SHANDONG WEIGAO GROUP MEDICAL POLYMER COMPANY LIMITED"
+ },
+ {
+  "code": "01068",
+  "name": "CHINA YURUN FOOD GROUP LIMITED"
+ },
+ {
+  "code": "01070",
+  "name": "TCL ELECTRONICS HOLDINGS LIMITED"
+ },
+ {
+  "code": "01071",
+  "name": "HUADIAN POWER INTERNATIONAL CORPORATION LIMITED"
+ },
+ {
+  "code": "01072",
+  "name": "DONGFANG ELECTRIC CORPORATION LIMITED"
+ },
+ {
+  "code": "01081",
+  "name": "DAJIN HEAVY INDUSTRY CO., LTD."
+ },
+ {
+  "code": "01083",
+  "name": "TOWNGAS SMART ENERGY COMPANY LIMITED"
+ },
+ {
+  "code": "01086",
+  "name": "GOODBABY INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01088",
+  "name": "CHINA SHENHUA ENERGY COMPANY LIMITED"
+ },
+ {
+  "code": "01093",
+  "name": "CSPC PHARMACEUTICAL GROUP LIMITED"
+ },
+ {
+  "code": "01097",
+  "name": "I-CABLE COMMUNICATIONS LIMITED"
+ },
+ {
+  "code": "01098",
+  "name": "ROAD KING INFRASTRUCTURE LIMITED"
+ },
+ {
+  "code": "01099",
+  "name": "SINOPHARM GROUP CO. LTD."
+ },
+ {
+  "code": "01108",
+  "name": "TRIUMPH NEW ENERGY COMPANY LIMITED"
+ },
+ {
+  "code": "01109",
+  "name": "CHINA RESOURCES LAND LIMITED"
+ },
+ {
+  "code": "01112",
+  "name": "HEALTH AND HAPPINESS (H&H) INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01113",
+  "name": "CK ASSET HOLDINGS LIMITED"
+ },
+ {
+  "code": "01114",
+  "name": "BRILLIANCE CHINA AUTOMOTIVE HOLDINGS LIMITED"
+ },
+ {
+  "code": "01115",
+  "name": "5100 XIZANG GLACIER COMPANY LIMITED"
+ },
+ {
+  "code": "01117",
+  "name": "CHINA MODERN DAIRY HOLDINGS LTD."
+ },
+ {
+  "code": "01119",
+  "name": "IDREAMSKY TECHNOLOGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "01121",
+  "name": "GOLDEN SOLAR NEW ENERGY TECHNOLOGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "01128",
+  "name": "WYNN MACAU, LIMITED"
+ },
+ {
+  "code": "01137",
+  "name": "HONG KONG TECHNOLOGY VENTURE COMPANY LIMITED"
+ },
+ {
+  "code": "01138",
+  "name": "COSCO SHIPPING ENERGY TRANSPORTATION CO., LTD."
+ },
+ {
+  "code": "01140",
+  "name": "HK.AI CAPITAL LIMITED"
+ },
+ {
+  "code": "01141",
+  "name": "CMBC CAPITAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01157",
+  "name": "ZOOMLION HEAVY INDUSTRY SCIENCE AND TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "01164",
+  "name": "CGN MINING COMPANY LIMITED"
+ },
+ {
+  "code": "01165",
+  "name": "SHUNFENG INTERNATIONAL CLEAN ENERGY LIMITED"
+ },
+ {
+  "code": "01167",
+  "name": "JACOBIO PHARMACEUTICALS GROUP CO., LTD."
+ },
+ {
+  "code": "01171",
+  "name": "YANKUANG ENERGY GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "01176",
+  "name": "ZHUGUANG HOLDINGS GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "01177",
+  "name": "SINO BIOPHARMACEUTICAL LIMITED"
+ },
+ {
+  "code": "01186",
+  "name": "CHINA RAILWAY CONSTRUCTION CORPORATION LIMITED"
+ },
+ {
+  "code": "01187",
+  "name": "COFOE MEDICAL TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "01188",
+  "name": "HYBRID KINETIC GROUP LIMITED"
+ },
+ {
+  "code": "01193",
+  "name": "CHINA RESOURCES GAS GROUP LIMITED"
+ },
+ {
+  "code": "01196",
+  "name": "REALORD TECHNOLOGY COMPANY LIMITED"
+ },
+ {
+  "code": "01199",
+  "name": "COSCO SHIPPING PORTS LIMITED"
+ },
+ {
+  "code": "01205",
+  "name": "CITIC RESOURCES HOLDINGS LIMITED"
+ },
+ {
+  "code": "01208",
+  "name": "MMG LIMITED"
+ },
+ {
+  "code": "01209",
+  "name": "CHINA RESOURCES MIXC LIFESTYLE SERVICES LIMITED"
+ },
+ {
+  "code": "01211",
+  "name": "BYD COMPANY LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "01233",
+  "name": "TIMES CHINA HOLDINGS LIMITED"
+ },
+ {
+  "code": "01234",
+  "name": "CHINA LILANG LIMITED"
+ },
+ {
+  "code": "01238",
+  "name": "POWERLONG REAL ESTATE HOLDINGS LIMITED"
+ },
+ {
+  "code": "01244",
+  "name": "3D MEDICINES INC."
+ },
+ {
+  "code": "01250",
+  "name": "SHANDONG HI-SPEED NEW ENERGY GROUP LIMITED"
+ },
+ {
+  "code": "01253",
+  "name": "CHINA GREEN BROAD ECOLOGICAL TECHNOLOGY COMPANY LIMITED"
+ },
+ {
+  "code": "01257",
+  "name": "CHINA EVERBRIGHT GREENTECH LIMITED"
+ },
+ {
+  "code": "01258",
+  "name": "CHINA NONFERROUS MINING CORPORATION LIMITED"
+ },
+ {
+  "code": "01268",
+  "name": "CHINA MEIDONG AUTO HOLDINGS LIMITED"
+ },
+ {
+  "code": "01269",
+  "name": "CHINA FIRST CAPITAL GROUP LIMITED"
+ },
+ {
+  "code": "01270",
+  "name": "LANGHAM HOSPITALITY INVESTMENTS AND LANGHAM HOSPITALITY INVESTMENTS LIMITED"
+ },
+ {
+  "code": "01274",
+  "name": "IMOTION AUTOMOTIVE TECHNOLOGY (SUZHOU) CO., LTD."
+ },
+ {
+  "code": "01276",
+  "name": "JIANGSU HENGRUI PHARMACEUTICALS CO., LTD."
+ },
+ {
+  "code": "01277",
+  "name": "KINETIC DEVELOPMENT GROUP LIMITED"
+ },
+ {
+  "code": "01282",
+  "name": "RENZE HARVEST INTERNATIONAL LIMITED"
+ },
+ {
+  "code": "01288",
+  "name": "AGRICULTURAL BANK OF CHINA LIMITED"
+ },
+ {
+  "code": "01293",
+  "name": "GRAND BAOXIN AUTO GROUP LIMITED"
+ },
+ {
+  "code": "01299",
+  "name": "AIA GROUP LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "01302",
+  "name": "LIFETECH SCIENTIFIC CORPORATION"
+ },
+ {
+  "code": "01304",
+  "name": "FORTIOR TECHNOLOGY (SHENZHEN) CO., LTD."
+ },
+ {
+  "code": "01308",
+  "name": "SITC INTERNATIONAL HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "01310",
+  "name": "HKBN LTD."
+ },
+ {
+  "code": "01313",
+  "name": "CHINA RESOURCES BUILDING MATERIALS TECHNOLOGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "01315",
+  "name": "GREEN ECONOMY DEVELOPMENT LIMITED"
+ },
+ {
+  "code": "01316",
+  "name": "NEXTEER AUTOMOTIVE GROUP LIMITED"
+ },
+ {
+  "code": "01317",
+  "name": "CHINA MAPLE LEAF EDUCATIONAL SYSTEMS LIMITED"
+ },
+ {
+  "code": "01318",
+  "name": "MAO GEPING COSMETICS CO., LTD."
+ },
+ {
+  "code": "01330",
+  "name": "DYNAGREEN ENVIRONMENTAL PROTECTION GROUP CO., LTD"
+ },
+ {
+  "code": "01333",
+  "name": "BRETON TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "01336",
+  "name": "NEW CHINA LIFE INSURANCE COMPANY LTD."
+ },
+ {
+  "code": "01339",
+  "name": "PEOPLE'S INSURANCE COMPANY (GROUP) OF CHINA LIMITED, THE"
+ },
+ {
+  "code": "01341",
+  "name": "HAO TIAN INTERNATIONAL CONSTRUCTION INVESTMENT GROUP LIMITED"
+ },
+ {
+  "code": "01347",
+  "name": "HUA HONG GRACE SEMICONDUCTOR LIMITED"
+ },
+ {
+  "code": "01349",
+  "name": "SHANGHAI FUDAN-ZHANGJIANG BIO-PHARMACEUTICAL CO., LTD."
+ },
+ {
+  "code": "01357",
+  "name": "MEITU, INC."
+ },
+ {
+  "code": "01359",
+  "name": "CHINA CINDA ASSET MANAGEMENT CO., LTD."
+ },
+ {
+  "code": "01361",
+  "name": "361 DEGREES INTERNATIONAL LIMITED"
+ },
+ {
+  "code": "01364",
+  "name": "GUMING HOLDINGS LIMITED"
+ },
+ {
+  "code": "01368",
+  "name": "XTEP INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01375",
+  "name": "CENTRAL CHINA SECURITIES CO., LTD."
+ },
+ {
+  "code": "01377",
+  "name": "GUANGDONG DTECH TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "01378",
+  "name": "CHINA HONGQIAO GROUP LIMITED"
+ },
+ {
+  "code": "01382",
+  "name": "PACIFIC TEXTILES HOLDINGS LIMITED"
+ },
+ {
+  "code": "01384",
+  "name": "DEEPEXI TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "01385",
+  "name": "SHANGHAI FUDAN MICROELECTRONICS GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "01398",
+  "name": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA LIMITED"
+ },
+ {
+  "code": "01405",
+  "name": "DPC DASH LTD"
+ },
+ {
+  "code": "01415",
+  "name": "COWELL E HOLDINGS INC."
+ },
+ {
+  "code": "01428",
+  "name": "BRIGHT SMART SECURITIES & COMMODITIES GROUP LIMITED"
+ },
+ {
+  "code": "01432",
+  "name": "CHINA SHENGMU ORGANIC MILK LIMITED"
+ },
+ {
+  "code": "01448",
+  "name": "FU SHOU YUAN INTERNATIONAL GROUP LIMITED"
+ },
+ {
+  "code": "01456",
+  "name": "GUOLIAN MINSHENG SECURITIES COMPANY LIMITED"
+ },
+ {
+  "code": "01458",
+  "name": "ZHOU HEI YA INTERNATIONAL HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "01468",
+  "name": "JAKOTA CAPITAL (HOLDING) GROUP"
+ },
+ {
+  "code": "01475",
+  "name": "NISSIN FOODS COMPANY LIMITED"
+ },
+ {
+  "code": "01477",
+  "name": "OCUMENSION THERAPEUTICS"
+ },
+ {
+  "code": "01478",
+  "name": "Q TECHNOLOGY (GROUP) COMPANY LIMITED"
+ },
+ {
+  "code": "01508",
+  "name": "CHINA REINSURANCE (GROUP) CORPORATION"
+ },
+ {
+  "code": "01513",
+  "name": "LIVZON PHARMACEUTICAL GROUP INC."
+ },
+ {
+  "code": "01515",
+  "name": "CHINA RESOURCES MEDICAL HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "01516",
+  "name": "SUNAC SERVICES HOLDINGS LIMITED"
+ },
+ {
+  "code": "01519",
+  "name": "J&T GLOBAL EXPRESS LIMITED"
+ },
+ {
+  "code": "01521",
+  "name": "FRONTAGE HOLDINGS CORPORATION"
+ },
+ {
+  "code": "01528",
+  "name": "RED STAR MACALLINE GROUP CORPORATION LTD."
+ },
+ {
+  "code": "01530",
+  "name": "3SBIO INC."
+ },
+ {
+  "code": "01541",
+  "name": "IMMUNEONCO BIOPHARMACEUTICALS (SHANGHAI) INC."
+ },
+ {
+  "code": "01548",
+  "name": "GENSCRIPT BIOTECH CORPORATION"
+ },
+ {
+  "code": "01551",
+  "name": "GUANGZHOU RURAL COMMERCIAL BANK CO., LTD"
+ },
+ {
+  "code": "01563",
+  "name": "ALLIANCE INTERNATIONAL EDUCATION LEASING HOLDINGS LIMITED"
+ },
+ {
+  "code": "01569",
+  "name": "MINSHENG EDUCATION GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "01578",
+  "name": "BANK OF TIANJIN CO., LTD."
+ },
+ {
+  "code": "01579",
+  "name": "YIHAI INTERNATIONAL HOLDING LTD."
+ },
+ {
+  "code": "01583",
+  "name": "QINQIN FOODSTUFFS GROUP (CAYMAN) COMPANY LIMITED"
+ },
+ {
+  "code": "01585",
+  "name": "YADEA GROUP HOLDINGS LTD."
+ },
+ {
+  "code": "01600",
+  "name": "TIAN LUN GAS HOLDINGS LIMITED"
+ },
+ {
+  "code": "01606",
+  "name": "CHINA DEVELOPMENT BANK FINANCIAL LEASING CO., LTD."
+ },
+ {
+  "code": "01608",
+  "name": "VPOWER GROUP INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01610",
+  "name": "COFCO JOYCOME FOODS LIMITED"
+ },
+ {
+  "code": "01618",
+  "name": "METALLURGICAL CORPORATION OF CHINA LTD."
+ },
+ {
+  "code": "01622",
+  "name": "REDCO PROPERTIES GROUP LIMITED"
+ },
+ {
+  "code": "01628",
+  "name": "YUZHOU GROUP HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "01635",
+  "name": "SHANGHAI DAZHONG PUBLIC UTILITIES (GROUP) CO., LTD."
+ },
+ {
+  "code": "01636",
+  "name": "CHINA METAL RESOURCES UTILIZATION LIMITED"
+ },
+ {
+  "code": "01638",
+  "name": "KAISA GROUP HOLDINGS LTD."
+ },
+ {
+  "code": "01658",
+  "name": "POSTAL SAVINGS BANK OF CHINA CO., LTD."
+ },
+ {
+  "code": "01661",
+  "name": "CHINA FRONTIER TECHNOLOGY GROUP"
+ },
+ {
+  "code": "01666",
+  "name": "TONG REN TANG TECHNOLOGIES CO LTD"
+ },
+ {
+  "code": "01668",
+  "name": "CHINA SOUTH CITY HOLDINGS LIMITED"
+ },
+ {
+  "code": "01675",
+  "name": "ASIAINFO TECHNOLOGIES LIMITED"
+ },
+ {
+  "code": "01680",
+  "name": "MACAU LEGEND DEVELOPMENT LIMITED"
+ },
+ {
+  "code": "01681",
+  "name": "CONSUN PHARMACEUTICAL GROUP LIMITED"
+ },
+ {
+  "code": "01685",
+  "name": "BOER POWER HOLDINGS LIMITED"
+ },
+ {
+  "code": "01686",
+  "name": "SUNEVISION HOLDINGS LIMITED"
+ },
+ {
+  "code": "01688",
+  "name": "LINGYI ITECH (GUANGDONG) COMPANY"
+ },
+ {
+  "code": "01691",
+  "name": "JS GLOBAL LIFESTYLE COMPANY LIMITED"
+ },
+ {
+  "code": "01709",
+  "name": "DL HOLDINGS GROUP LIMITED"
+ },
+ {
+  "code": "01717",
+  "name": "AUSNUTRIA DAIRY CORPORATION LTD"
+ },
+ {
+  "code": "01725",
+  "name": "CHINA STRATEGIC TECHNOLOGY GROUP LIMITED"
+ },
+ {
+  "code": "01728",
+  "name": "CHINA ZHENGTONG AUTO SERVICES HOLDINGS LIMITED"
+ },
+ {
+  "code": "01729",
+  "name": "TIME INTERCONNECT TECHNOLOGY LIMITED"
+ },
+ {
+  "code": "01735",
+  "name": "CENTRAL NEW ENERGY HOLDING GROUP LIMITED"
+ },
+ {
+  "code": "01755",
+  "name": "S-ENJOY SERVICE GROUP CO., LIMITED"
+ },
+ {
+  "code": "01765",
+  "name": "XJ INTERNATIONAL HOLDINGS CO., LTD."
+ },
+ {
+  "code": "01766",
+  "name": "CRRC CORPORATION LIMITED"
+ },
+ {
+  "code": "01768",
+  "name": "BUSY MING GROUP CO., LTD."
+ },
+ {
+  "code": "01769",
+  "name": "SCHOLAR EDUCATION GROUP"
+ },
+ {
+  "code": "01772",
+  "name": "GANFENG LITHIUM GROUP CO., LTD."
+ },
+ {
+  "code": "01773",
+  "name": "TIANLI INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01776",
+  "name": "GF SECURITIES CO., LTD."
+ },
+ {
+  "code": "01777",
+  "name": "FANTASIA HOLDINGS GROUP CO., LIMITED"
+ },
+ {
+  "code": "01778",
+  "name": "COLOUR LIFE SERVICES GROUP CO., LIMITED"
+ },
+ {
+  "code": "01783",
+  "name": "ENVISION GREENWISE HOLDINGS LIMITED"
+ },
+ {
+  "code": "01787",
+  "name": "SHANDONG GOLD MINING CO., LTD."
+ },
+ {
+  "code": "01788",
+  "name": "GUOTAI JUNAN INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01789",
+  "name": "AK MEDICAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01797",
+  "name": "EAST BUY HOLDING LIMITED"
+ },
+ {
+  "code": "01798",
+  "name": "CHINA DATANG CORPORATION RENEWABLE POWER CO., LIMITED"
+ },
+ {
+  "code": "01799",
+  "name": "XINTE ENERGY CO., LTD."
+ },
+ {
+  "code": "01800",
+  "name": "CHINA COMMUNICATIONS CONSTRUCTION COMPANY LIMITED"
+ },
+ {
+  "code": "01801",
+  "name": "INNOVENT BIOLOGICS, INC."
+ },
+ {
+  "code": "01810",
+  "name": "XIAOMI CORPORATION -HKD TRADED SHARES"
+ },
+ {
+  "code": "01811",
+  "name": "CGN NEW ENERGY HOLDINGS CO., LTD."
+ },
+ {
+  "code": "01812",
+  "name": "SHANDONG CHENMING PAPER HOLDINGS LIMITED"
+ },
+ {
+  "code": "01813",
+  "name": "KWG GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "01816",
+  "name": "CGN POWER CO., LTD"
+ },
+ {
+  "code": "01817",
+  "name": "MULSANNE GROUP HOLDING LIMITED"
+ },
+ {
+  "code": "01818",
+  "name": "ZHAOJIN MINING INDUSTRY COMPANY LIMITED"
+ },
+ {
+  "code": "01828",
+  "name": "FWD GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "01833",
+  "name": "PING AN HEALTHCARE AND TECHNOLOGY COMPANY LIMITED"
+ },
+ {
+  "code": "01836",
+  "name": "STELLA INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01848",
+  "name": "CHINA AIRCRAFT LEASING GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "01855",
+  "name": "ZONQING ENVIRONMENTAL LIMITED"
+ },
+ {
+  "code": "01858",
+  "name": "BEIJING CHUNLIZHENGDA MEDICAL INSTRUMENTS CO., LTD."
+ },
+ {
+  "code": "01860",
+  "name": "MOBVISTA INC."
+ },
+ {
+  "code": "01873",
+  "name": "VIVA BIOTECH HOLDINGS"
+ },
+ {
+  "code": "01876",
+  "name": "BUDWEISER BREWING COMPANY APAC LIMITED"
+ },
+ {
+  "code": "01877",
+  "name": "SHANGHAI JUNSHI BIOSCIENCES CO., LTD."
+ },
+ {
+  "code": "01880",
+  "name": "CHINA TOURISM GROUP DUTY FREE CORPORATION LIMITED"
+ },
+ {
+  "code": "01882",
+  "name": "HAITIAN INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01883",
+  "name": "CITIC TELECOM INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01888",
+  "name": "KINGBOARD LAMINATES HOLDINGS LIMITED"
+ },
+ {
+  "code": "01890",
+  "name": "CHINA KEPEI EDUCATION GROUP LIMITED"
+ },
+ {
+  "code": "01896",
+  "name": "MAOYAN ENTERTAINMENT"
+ },
+ {
+  "code": "01898",
+  "name": "CHINA COAL ENERGY COMPANY LIMITED"
+ },
+ {
+  "code": "01905",
+  "name": "HAITONG UNITRUST INTERNATIONAL FINANCIAL LEASING CO., LTD."
+ },
+ {
+  "code": "01907",
+  "name": "CHINA RISUN GROUP LIMITED"
+ },
+ {
+  "code": "01908",
+  "name": "C&D INTERNATIONAL INVESTMENT GROUP LIMITED"
+ },
+ {
+  "code": "01909",
+  "name": "FIRE ROCK HOLDINGS LIMITED"
+ },
+ {
+  "code": "01910",
+  "name": "SAMSONITE GROUP S.A."
+ },
+ {
+  "code": "01911",
+  "name": "CHINA RENAISSANCE HOLDINGS LIMITED"
+ },
+ {
+  "code": "01916",
+  "name": "JIANGXI BANK CO., LTD."
+ },
+ {
+  "code": "01918",
+  "name": "SUNAC CHINA HOLDINGS LIMITED"
+ },
+ {
+  "code": "01919",
+  "name": "COSCO SHIPPING HOLDINGS CO., LTD."
+ },
+ {
+  "code": "01921",
+  "name": "DALIPAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "01928",
+  "name": "SANDS CHINA LTD."
+ },
+ {
+  "code": "01929",
+  "name": "CHOW TAI FOOK JEWELLERY GROUP LIMITED"
+ },
+ {
+  "code": "01942",
+  "name": "MOG DIGITECH HOLDINGS LIMITED"
+ },
+ {
+  "code": "01951",
+  "name": "JINXIN FERTILITY GROUP LIMITED"
+ },
+ {
+  "code": "01952",
+  "name": "EVEREST MEDICINES LIMITED"
+ },
+ {
+  "code": "01958",
+  "name": "BAIC MOTOR CORPORATION LIMITED"
+ },
+ {
+  "code": "01963",
+  "name": "BANK OF CHONGQING CO., LTD."
+ },
+ {
+  "code": "01966",
+  "name": "CHINA SCE GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "01969",
+  "name": "CHINA CHUNLAI EDUCATION GROUP CO., LTD."
+ },
+ {
+  "code": "01970",
+  "name": "IMAX CHINA HOLDING, INC."
+ },
+ {
+  "code": "01972",
+  "name": "SWIRE PROPERTIES LIMITED"
+ },
+ {
+  "code": "01980",
+  "name": "TIAN GE INTERACTIVE HOLDINGS LIMITED"
+ },
+ {
+  "code": "01981",
+  "name": "CATHAY GROUP HOLDINGS INC."
+ },
+ {
+  "code": "01988",
+  "name": "CHINA MINSHENG BANKING CORP., LTD."
+ },
+ {
+  "code": "01989",
+  "name": "DELTON TECHNOLOGY (GUANGZHOU) INC."
+ },
+ {
+  "code": "01995",
+  "name": "EVER SUNSHINE SERVICES GROUP LIMITED"
+ },
+ {
+  "code": "01996",
+  "name": "REDSUN PROPERTIES GROUP LIMITED"
+ },
+ {
+  "code": "01997",
+  "name": "WHARF REAL ESTATE INVESTMENT COMPANY LIMITED"
+ },
+ {
+  "code": "01999",
+  "name": "MAN WAH HOLDINGS LIMITED"
+ },
+ {
+  "code": "02001",
+  "name": "CHINA NEW HIGHER EDUCATION GROUP LIMITED"
+ },
+ {
+  "code": "02003",
+  "name": "VCREDIT HOLDINGS LIMITED"
+ },
+ {
+  "code": "02005",
+  "name": "SSY GROUP LIMITED"
+ },
+ {
+  "code": "02007",
+  "name": "COUNTRY GARDEN HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "02008",
+  "name": "PHOENIX MEDIA INVESTMENT (HOLDINGS) LIMITED"
+ },
+ {
+  "code": "02009",
+  "name": "BBMG CORPORATION"
+ },
+ {
+  "code": "02013",
+  "name": "WEIMOB INC."
+ },
+ {
+  "code": "02015",
+  "name": "LI AUTO INC."
+ },
+ {
+  "code": "02016",
+  "name": "CHINA ZHESHANG BANK CO., LTD."
+ },
+ {
+  "code": "02018",
+  "name": "AAC TECHNOLOGIES HOLDINGS INC."
+ },
+ {
+  "code": "02020",
+  "name": "ANTA SPORTS PRODUCTS LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "02026",
+  "name": "PONY AI INC."
+ },
+ {
+  "code": "02038",
+  "name": "FIH MOBILE LIMITED"
+ },
+ {
+  "code": "02039",
+  "name": "CHINA INTERNATIONAL MARINE CONTAINERS (GROUP) CO., LTD."
+ },
+ {
+  "code": "02048",
+  "name": "E-HOUSE (CHINA) ENTERPRISE HOLDINGS LIMITED"
+ },
+ {
+  "code": "02050",
+  "name": "ZHEJIANG SANHUA INTELLIGENT CONTROLS CO., LTD."
+ },
+ {
+  "code": "02051",
+  "name": "VALA INC."
+ },
+ {
+  "code": "02057",
+  "name": "ZTO EXPRESS (CAYMAN) INC."
+ },
+ {
+  "code": "02068",
+  "name": "CHINA ALUMINUM INTERNATIONAL ENGINEERING CORPORATION LIMITED"
+ },
+ {
+  "code": "02096",
+  "name": "SIMCERE PHARMACEUTICAL GROUP LIMITED"
+ },
+ {
+  "code": "02097",
+  "name": "MIXUE GROUP"
+ },
+ {
+  "code": "02098",
+  "name": "ZALL SMART COMMERCE GROUP LTD."
+ },
+ {
+  "code": "02099",
+  "name": "CHINA GOLD INTERNATIONAL RESOURCES CORP. LTD."
+ },
+ {
+  "code": "02105",
+  "name": "LAEKNA, INC."
+ },
+ {
+  "code": "02111",
+  "name": "BEST PACIFIC INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "02121",
+  "name": "AINNOVATION TECHNOLOGY GROUP CO., LTD"
+ },
+ {
+  "code": "02126",
+  "name": "JW (CAYMAN) THERAPEUTICS CO. LTD"
+ },
+ {
+  "code": "02128",
+  "name": "CHINA LESSO GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "02136",
+  "name": "LIFESTYLE CHINA GROUP LIMITED"
+ },
+ {
+  "code": "02137",
+  "name": "BRII BIOSCIENCES LIMITED"
+ },
+ {
+  "code": "02138",
+  "name": "EC HEALTHCARE"
+ },
+ {
+  "code": "02142",
+  "name": "HBM HOLDINGS LIMITED"
+ },
+ {
+  "code": "02145",
+  "name": "SHANGHAI CHICMAX COSMETIC CO., LTD."
+ },
+ {
+  "code": "02150",
+  "name": "NAYUKI HOLDINGS LIMITED"
+ },
+ {
+  "code": "02155",
+  "name": "MORIMATSU INTERNATIONAL HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "02156",
+  "name": "C&D PROPERTY MANAGEMENT GROUP CO., LTD"
+ },
+ {
+  "code": "02157",
+  "name": "LEPU BIOPHARMA CO., LTD."
+ },
+ {
+  "code": "02158",
+  "name": "YIDU TECH INC."
+ },
+ {
+  "code": "02160",
+  "name": "MICROPORT CARDIOFLOW MEDTECH CORPORATION"
+ },
+ {
+  "code": "02162",
+  "name": "KEYMED BIOSCIENCES INC."
+ },
+ {
+  "code": "02169",
+  "name": "CANGGANG RAILWAY LIMITED"
+ },
+ {
+  "code": "02171",
+  "name": "CARSGEN THERAPEUTICS HOLDINGS LIMITED"
+ },
+ {
+  "code": "02172",
+  "name": "MICROPORT NEUROSCIENTIFIC CORPORATION"
+ },
+ {
+  "code": "02186",
+  "name": "LUYE PHARMA GROUP LTD."
+ },
+ {
+  "code": "02192",
+  "name": "MEDLIVE TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "02196",
+  "name": "SHANGHAI FOSUN PHARMACEUTICAL (GROUP) CO., LTD."
+ },
+ {
+  "code": "02197",
+  "name": "CLOVER BIOPHARMACEUTICALS, LTD."
+ },
+ {
+  "code": "02199",
+  "name": "REGINA MIRACLE INTERNATIONAL (HOLDINGS) LIMITED"
+ },
+ {
+  "code": "02202",
+  "name": "CHINA VANKE CO., LTD."
+ },
+ {
+  "code": "02208",
+  "name": "GOLDWIND SCIENCE&TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "02218",
+  "name": "YANTAI NORTH ANDRE JUICE CO., LTD."
+ },
+ {
+  "code": "02228",
+  "name": "XTALPI HOLDINGS LIMITED"
+ },
+ {
+  "code": "02232",
+  "name": "CRYSTAL INTERNATIONAL GROUP LIMITED"
+ },
+ {
+  "code": "02233",
+  "name": "WEST CHINA CEMENT LIMITED"
+ },
+ {
+  "code": "02238",
+  "name": "GUANGZHOU AUTOMOBILE GROUP CO., LTD."
+ },
+ {
+  "code": "02246",
+  "name": "GOGOX HOLDINGS LIMITED"
+ },
+ {
+  "code": "02252",
+  "name": "SHANGHAI MICROPORT MEDBOT (GROUP) CO., LTD."
+ },
+ {
+  "code": "02255",
+  "name": "HAICHANG OCEAN PARK HOLDINGS LTD."
+ },
+ {
+  "code": "02257",
+  "name": "SIRNAOMICS LTD."
+ },
+ {
+  "code": "02259",
+  "name": "ZIJIN GOLD INTERNATIONAL COMPANY LIMITED"
+ },
+ {
+  "code": "02268",
+  "name": "WUXI XDC CAYMAN INC."
+ },
+ {
+  "code": "02269",
+  "name": "WUXI BIOLOGICS (CAYMAN) INC."
+ },
+ {
+  "code": "02273",
+  "name": "GUSHENGTANG HOLDINGS LIMITED"
+ },
+ {
+  "code": "02276",
+  "name": "SHANGHAI CONANT OPTICAL CO., LTD."
+ },
+ {
+  "code": "02279",
+  "name": "YONGHE MEDICAL GROUP CO., LTD."
+ },
+ {
+  "code": "02280",
+  "name": "HC GROUP INC."
+ },
+ {
+  "code": "02282",
+  "name": "MGM CHINA HOLDINGS LIMITED"
+ },
+ {
+  "code": "02285",
+  "name": "CHERVON HOLDINGS LIMITED"
+ },
+ {
+  "code": "02291",
+  "name": "LEPU SCIENTECH MEDICAL TECHNOLOGY (SHANGHAI) CO., LTD."
+ },
+ {
+  "code": "02298",
+  "name": "COSMO LADY (CHINA) HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "02313",
+  "name": "SHENZHOU INTERNATIONAL GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "02314",
+  "name": "LEE & MAN PAPER MANUFACTURING LIMITED"
+ },
+ {
+  "code": "02315",
+  "name": "BIOCYTOGEN PHARMACEUTICALS (BEIJING) CO., LTD."
+ },
+ {
+  "code": "02318",
+  "name": "PING AN INSURANCE (GROUP) COMPANY OF CHINA, LTD.-HKD TRADED SHARES"
+ },
+ {
+  "code": "02319",
+  "name": "CHINA MENGNIU DAIRY COMPANY LIMITED"
+ },
+ {
+  "code": "02326",
+  "name": "NEW PROVENANCE EVERLASTING HOLDINGS LIMITED"
+ },
+ {
+  "code": "02328",
+  "name": "PICC PROPERTY AND CASUALTY COMPANY LIMITED"
+ },
+ {
+  "code": "02329",
+  "name": "GLORY HEALTH INDUSTRY LIMITED"
+ },
+ {
+  "code": "02331",
+  "name": "LI NING COMPANY LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "02333",
+  "name": "GREAT WALL MOTOR COMPANY LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "02338",
+  "name": "WEICHAI POWER CO., LTD."
+ },
+ {
+  "code": "02342",
+  "name": "COMBA TELECOM SYSTEMS HOLDINGS LIMITED"
+ },
+ {
+  "code": "02343",
+  "name": "PACIFIC BASIN SHIPPING LIMITED"
+ },
+ {
+  "code": "02356",
+  "name": "DAH SING BANKING GROUP LIMITED"
+ },
+ {
+  "code": "02357",
+  "name": "AVICHINA INDUSTRY & TECHNOLOGY COMPANY LIMITED"
+ },
+ {
+  "code": "02359",
+  "name": "WUXI APPTEC CO., LTD."
+ },
+ {
+  "code": "02362",
+  "name": "JINCHUAN GROUP INTERNATIONAL RESOURCES CO. LTD."
+ },
+ {
+  "code": "02363",
+  "name": "TONGDA HONG TAI HOLDINGS LIMITED"
+ },
+ {
+  "code": "02367",
+  "name": "GIANT BIOGENE HOLDING CO., LTD"
+ },
+ {
+  "code": "02369",
+  "name": "COOLPAD GROUP LIMITED"
+ },
+ {
+  "code": "02378",
+  "name": "PRUDENTIAL PLC"
+ },
+ {
+  "code": "02380",
+  "name": "CHINA POWER INTERNATIONAL DEVELOPMENT LIMITED"
+ },
+ {
+  "code": "02382",
+  "name": "SUNNY OPTICAL TECHNOLOGY (GROUP) COMPANY LIMITED"
+ },
+ {
+  "code": "02386",
+  "name": "SINOPEC ENGINEERING (GROUP) CO., LTD."
+ },
+ {
+  "code": "02388",
+  "name": "BOC HONG KONG (HOLDINGS) LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "02400",
+  "name": "XD INC."
+ },
+ {
+  "code": "02402",
+  "name": "BEIJING SINOHYTEC CO., LTD."
+ },
+ {
+  "code": "02407",
+  "name": "GAUSH MEDITECH LTD"
+ },
+ {
+  "code": "02410",
+  "name": "TYK MEDICINES, INC"
+ },
+ {
+  "code": "02411",
+  "name": "SHENZHEN PAGODA INDUSTRIAL (GROUP) CORPORATION LIMITED"
+ },
+ {
+  "code": "02415",
+  "name": "MEDSCI HEALTHCARE HOLDINGS LIMITED"
+ },
+ {
+  "code": "02416",
+  "name": "EDIANYUN LIMITED"
+ },
+ {
+  "code": "02419",
+  "name": "DEKON FOOD AND AGRICULTURE GROUP"
+ },
+ {
+  "code": "02423",
+  "name": "KE HOLDINGS INC."
+ },
+ {
+  "code": "02429",
+  "name": "BEIJING UBOX ONLINE TECHNOLOGY CORP."
+ },
+ {
+  "code": "02431",
+  "name": "MINIEYE TECHNOLOGY CO., LTD"
+ },
+ {
+  "code": "02432",
+  "name": "SHENZHEN DOBOT CORP LTD"
+ },
+ {
+  "code": "02443",
+  "name": "AUTOSTREETS DEVELOPMENT LIMITED"
+ },
+ {
+  "code": "02453",
+  "name": "CONCORD HEALTHCARE GROUP CO., LTD."
+ },
+ {
+  "code": "02460",
+  "name": "CHINA RESOURCES BEVERAGE (HOLDINGS) COMPANY LIMITED"
+ },
+ {
+  "code": "02465",
+  "name": "JIANGSU LOPAL TECH. GROUP CO., LTD."
+ },
+ {
+  "code": "02469",
+  "name": "FENBI LTD."
+ },
+ {
+  "code": "02473",
+  "name": "XXF GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "02476",
+  "name": "VICTORY GIANT TECHNOLOGY (HUIZHOU) CO., LTD."
+ },
+ {
+  "code": "02477",
+  "name": "WELLCELL HOLDINGS CO., LIMITED"
+ },
+ {
+  "code": "02487",
+  "name": "CUTIA THERAPEUTICS"
+ },
+ {
+  "code": "02493",
+  "name": "MABWELL (SHANGHAI) BIOSCIENCE CO., LTD."
+ },
+ {
+  "code": "02498",
+  "name": "ROBOSENSE TECHNOLOGY CO., LTD"
+ },
+ {
+  "code": "02500",
+  "name": "VENUS MEDTECH (HANGZHOU) INC."
+ },
+ {
+  "code": "02506",
+  "name": "XUNFEI HEALTHCARE TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "02507",
+  "name": "CIRRUS AIRCRAFT LIMITED"
+ },
+ {
+  "code": "02510",
+  "name": "T.S. LINES LIMITED"
+ },
+ {
+  "code": "02511",
+  "name": "HIGHTIDE THERAPEUTICS, INC."
+ },
+ {
+  "code": "02513",
+  "name": "Z.AI CO., LTD."
+ },
+ {
+  "code": "02517",
+  "name": "GUOQUAN FOOD (SHANGHAI) CO., LTD."
+ },
+ {
+  "code": "02522",
+  "name": "JIANGXI RIMAG GROUP CO., LTD."
+ },
+ {
+  "code": "02525",
+  "name": "HESAI GROUP -NEW"
+ },
+ {
+  "code": "02533",
+  "name": "BLACK SESAME INTERNATIONAL HOLDING LIMITED"
+ },
+ {
+  "code": "02550",
+  "name": "EASOU TECHNOLOGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "02555",
+  "name": "SICHUAN BAICHA BAIDAO INDUSTRIAL CO., LTD."
+ },
+ {
+  "code": "02556",
+  "name": "MARKETINGFORCE MANAGEMENT LTD"
+ },
+ {
+  "code": "02562",
+  "name": "SYNAGISTICS LIMITED"
+ },
+ {
+  "code": "02565",
+  "name": "PEGBIO CO., LTD."
+ },
+ {
+  "code": "02570",
+  "name": "SHANGHAI REFIRE GROUP LIMITED"
+ },
+ {
+  "code": "02575",
+  "name": "XUANZHU BIOPHARMACEUTICAL CO., LTD."
+ },
+ {
+  "code": "02577",
+  "name": "INNOSCIENCE (SUZHOU) TECHNOLOGY HOLDING CO., LTD."
+ },
+ {
+  "code": "02579",
+  "name": "CNGR ADVANCED MATERIAL CO., LTD."
+ },
+ {
+  "code": "02580",
+  "name": "AUX ELECTRIC CO., LTD."
+ },
+ {
+  "code": "02582",
+  "name": "JIANGSU GUOFU HYDROGEN ENERGY EQUIPMENT CO., LTD."
+ },
+ {
+  "code": "02583",
+  "name": "SHENZHEN HIPINE PRECISION TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "02586",
+  "name": "DMALL INC."
+ },
+ {
+  "code": "02587",
+  "name": "HEALTHYWAY INC."
+ },
+ {
+  "code": "02588",
+  "name": "BOC AVIATION LIMITED"
+ },
+ {
+  "code": "02589",
+  "name": "AUNTEA JENNY (SHANGHAI) INDUSTRIAL CO., LTD."
+ },
+ {
+  "code": "02590",
+  "name": "BEIJING GEEKPLUS TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "02591",
+  "name": "GUANGZHOU INNOGEN PHARMACEUTICAL GROUP CO., LTD."
+ },
+ {
+  "code": "02595",
+  "name": "GENFLEET THERAPEUTICS (SHANGHAI) INC."
+ },
+ {
+  "code": "02600",
+  "name": "ALUMINUM CORPORATION OF CHINA LIMITED"
+ },
+ {
+  "code": "02601",
+  "name": "CHINA PACIFIC INSURANCE (GROUP) CO. LTD."
+ },
+ {
+  "code": "02602",
+  "name": "ONEWO INC."
+ },
+ {
+  "code": "02603",
+  "name": "XIAMEN JIHONG CO., LTD"
+ },
+ {
+  "code": "02607",
+  "name": "SHANGHAI PHARMACEUTICALS HOLDING CO., LTD."
+ },
+ {
+  "code": "02609",
+  "name": "BAYZED HEALTH GROUP INC"
+ },
+ {
+  "code": "02610",
+  "name": "NANSHAN ALUMINIUM INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "02611",
+  "name": "GUOTAI HAITONG SECURITIES CO., LTD."
+ },
+ {
+  "code": "02616",
+  "name": "CSTONE PHARMACEUTICALS"
+ },
+ {
+  "code": "02617",
+  "name": "TRANSTHERA SCIENCES (NANJING), INC."
+ },
+ {
+  "code": "02618",
+  "name": "JD LOGISTICS, INC."
+ },
+ {
+  "code": "02627",
+  "name": "AB&B BIO-TECH CO.,LTD. JS"
+ },
+ {
+  "code": "02628",
+  "name": "CHINA LIFE INSURANCE COMPANY LIMITED"
+ },
+ {
+  "code": "02629",
+  "name": "MIRXES HOLDING COMPANY LIMITED"
+ },
+ {
+  "code": "02631",
+  "name": "SICC CO., LTD."
+ },
+ {
+  "code": "02635",
+  "name": "NUOBIKAN ARTIFICIAL INTELLIGENCE TECHNOLOGY (CHENGDU) CO., LTD."
+ },
+ {
+  "code": "02637",
+  "name": "FUJIAN HAIXI PHARMACEUTICALS CO., LTD."
+ },
+ {
+  "code": "02643",
+  "name": "CAOCAO INC."
+ },
+ {
+  "code": "02648",
+  "name": "ANJOY FOODS GROUP CO., LTD."
+ },
+ {
+  "code": "02650",
+  "name": "SHANGHAI ZHIDA TECHNOLOGY DEVELOPMENT CO., LTD."
+ },
+ {
+  "code": "02652",
+  "name": "CF PHARMTECH, INC."
+ },
+ {
+  "code": "02655",
+  "name": "GUOXIA TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "02656",
+  "name": "160 HEALTH INTERNATIONAL LIMITED"
+ },
+ {
+  "code": "02659",
+  "name": "SHANGHAI BAO PHARMACEUTICALS CO., LTD."
+ },
+ {
+  "code": "02661",
+  "name": "QINGSONG HEALTH CORPORATION"
+ },
+ {
+  "code": "02665",
+  "name": "SEYOND HOLDINGS LTD."
+ },
+ {
+  "code": "02666",
+  "name": "GENERTEC UNIVERSAL MEDICAL GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "02669",
+  "name": "CHINA OVERSEAS PROPERTY HOLDINGS LIMITED"
+ },
+ {
+  "code": "02675",
+  "name": "SHENZHEN EDGE MEDICAL CO., LTD."
+ },
+ {
+  "code": "02676",
+  "name": "SUZHOU NOVOSENSE MICROELECTRONICS CO., LTD."
+ },
+ {
+  "code": "02678",
+  "name": "TEXHONG INTERNATIONAL GROUP LIMITED"
+ },
+ {
+  "code": "02685",
+  "name": "QUANTGROUP HOLDING LIMITED"
+ },
+ {
+  "code": "02687",
+  "name": "SHANGHAI ABLE DIGITAL SCIENCE&TECH CO., LTD."
+ },
+ {
+  "code": "02688",
+  "name": "ENN ENERGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "02689",
+  "name": "NINE DRAGONS PAPER (HOLDINGS) LIMITED"
+ },
+ {
+  "code": "02691",
+  "name": "NANHUA FUTURES CO., LTD."
+ },
+ {
+  "code": "02692",
+  "name": "SHENZHEN ZHAOWEI MACHINERY & ELECTRONICS CO., LTD."
+ },
+ {
+  "code": "02698",
+  "name": "SOFTCARE LIMITED"
+ },
+ {
+  "code": "02701",
+  "name": "NSING TECHNOLOGIES INC."
+ },
+ {
+  "code": "02706",
+  "name": "BEIJING HAIZHI TECHNOLOGY GROUP CO., LTD."
+ },
+ {
+  "code": "02714",
+  "name": "MUYUAN FOODS GROUP CO., LTD."
+ },
+ {
+  "code": "02715",
+  "name": "ESTUN AUTOMATION CO., LTD"
+ },
+ {
+  "code": "02718",
+  "name": "MININGLAMP TECHNOLOGY"
+ },
+ {
+  "code": "02727",
+  "name": "SHANGHAI ELECTRIC GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "02768",
+  "name": "QINGDAO GON TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "02772",
+  "name": "ZHONGLIANG HOLDINGS GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "02777",
+  "name": "GUANGZHOU R&F PROPERTIES CO., LTD."
+ },
+ {
+  "code": "02788",
+  "name": "CHUANGXIN INDUSTRIES HOLDINGS LIMITED"
+ },
+ {
+  "code": "02798",
+  "name": "PERENNIAL ENERGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "02799",
+  "name": "CHINA CITIC FINANCIAL ASSET MANAGEMENT CO., LTD."
+ },
+ {
+  "code": "02800",
+  "name": "TRACKER FUND OF HONG KONG -HKD TRADED UNITS"
+ },
+ {
+  "code": "02801",
+  "name": "ISHARES CORE MSCI CHINA ETF"
+ },
+ {
+  "code": "02825",
+  "name": "W.I.S.E. - CSI HK 100 TRACKER"
+ },
+ {
+  "code": "02828",
+  "name": "HANG SENG CHINA ENTERPRISES INDEX ETF -HKD TRADED UNITS"
+ },
+ {
+  "code": "02837",
+  "name": "GLOBAL X HANG SENG TECH ETF"
+ },
+ {
+  "code": "02858",
+  "name": "YIXIN GROUP LIMITED"
+ },
+ {
+  "code": "02865",
+  "name": "HAINAN DRINDA NEW ENERGY TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "02866",
+  "name": "COSCO SHIPPING DEVELOPMENT CO., LTD."
+ },
+ {
+  "code": "02869",
+  "name": "GREENTOWN SERVICE GROUP CO. LTD."
+ },
+ {
+  "code": "02877",
+  "name": "CHINA SHINEWAY PHARMACEUTICAL GROUP LIMITED"
+ },
+ {
+  "code": "02880",
+  "name": "LIAONING PORT CO., LTD."
+ },
+ {
+  "code": "02882",
+  "name": "3DG HOLDINGS (INTERNATIONAL) LIMITED"
+ },
+ {
+  "code": "02883",
+  "name": "CHINA OILFIELD SERVICES LIMITED"
+ },
+ {
+  "code": "02888",
+  "name": "STANDARD CHARTERED PLC"
+ },
+ {
+  "code": "02889",
+  "name": "PATEO CONNECT TECHNOLOGY (SHANGHAI) CORPORATION"
+ },
+ {
+  "code": "02899",
+  "name": "ZIJIN MINING GROUP CO., LTD."
+ },
+ {
+  "code": "02983",
+  "name": "HESAI GROUP -OLD"
+ },
+ {
+  "code": "03032",
+  "name": "HANG SENG TECH INDEX ETF"
+ },
+ {
+  "code": "03033",
+  "name": "CSOP HANG SENG TECH INDEX ETF"
+ },
+ {
+  "code": "03037",
+  "name": "CSOP HANG SENG INDEX ETF"
+ },
+ {
+  "code": "03039",
+  "name": "E FUND (HK) HSI ESG ENHANCED INDEX ETF"
+ },
+ {
+  "code": "03040",
+  "name": "GLOBAL X MSCI CHINA ETF-HKD TRADED UNITS"
+ },
+ {
+  "code": "03067",
+  "name": "ISHARES HANG SENG TECH ETF - HKD TRADED UNITS"
+ },
+ {
+  "code": "03069",
+  "name": "CHINAAMC HANG SENG BIOTECH ETF - HKD TRADED UNITS"
+ },
+ {
+  "code": "03070",
+  "name": "PING AN OF CHINA CSI HK DIVIDEND ETF -HKD COUNTER"
+ },
+ {
+  "code": "03088",
+  "name": "CHINAAMC HANG SENG TECH INDEX ETF -HKD TRADED UNITS"
+ },
+ {
+  "code": "03110",
+  "name": "GLOBAL X HANG SENG HIGH DIVIDEND YIELD ETF-HKD COUNTER"
+ },
+ {
+  "code": "03115",
+  "name": "ISHARES CORE HANG SENG INDEX ETF -HKD TRADED UNITS"
+ },
+ {
+  "code": "03167",
+  "name": "ICBC CSOP S&P NEW CHINA SECTORS ETF -HKD TRADED UNITS"
+ },
+ {
+  "code": "03174",
+  "name": "CSOP HANG SENG BIOTECH ETF"
+ },
+ {
+  "code": "03200",
+  "name": "SHENZHEN HAN'S CNC TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "03268",
+  "name": "MEIG SMART TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "03288",
+  "name": "FOSHAN HAITIAN FLAVOURING AND FOOD COMPANY LTD."
+ },
+ {
+  "code": "03296",
+  "name": "HUAQIN CO., LTD."
+ },
+ {
+  "code": "03301",
+  "name": "RONSHINE CHINA HOLDINGS LIMITED"
+ },
+ {
+  "code": "03306",
+  "name": "JNBY DESIGN LIMITED"
+ },
+ {
+  "code": "03309",
+  "name": "C-MER MEDICAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "03311",
+  "name": "CHINA STATE CONSTRUCTION INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "03317",
+  "name": "SHENZHEN XUNCE TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "03319",
+  "name": "A-LIVING SMART CITY SERVICES CO., LTD."
+ },
+ {
+  "code": "03320",
+  "name": "CHINA RESOURCES PHARMACEUTICAL GROUP LIMITED"
+ },
+ {
+  "code": "03323",
+  "name": "CHINA NATIONAL BUILDING MATERIAL COMPANY LIMITED"
+ },
+ {
+  "code": "03328",
+  "name": "BANK OF COMMUNICATIONS CO., LTD."
+ },
+ {
+  "code": "03329",
+  "name": "BOCOM INTERNATIONAL HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "03330",
+  "name": "LINGBAO GOLD GROUP COMPANY LTD."
+ },
+ {
+  "code": "03339",
+  "name": "LONKING HOLDINGS LIMITED"
+ },
+ {
+  "code": "03347",
+  "name": "HANGZHOU TIGERMED CONSULTING CO., LTD."
+ },
+ {
+  "code": "03360",
+  "name": "FAR EAST HORIZON LIMITED"
+ },
+ {
+  "code": "03368",
+  "name": "PARKSON RETAIL GROUP LIMITED"
+ },
+ {
+  "code": "03369",
+  "name": "QINHUANGDAO PORT CO., LTD."
+ },
+ {
+  "code": "03377",
+  "name": "SINO-OCEAN GROUP HOLDING LIMITED"
+ },
+ {
+  "code": "03380",
+  "name": "LOGAN GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "03382",
+  "name": "TIANJIN PORT DEVELOPMENT HOLDINGS LIMITED"
+ },
+ {
+  "code": "03383",
+  "name": "AGILE GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "03389",
+  "name": "HENGDELI HOLDINGS LIMITED"
+ },
+ {
+  "code": "03393",
+  "name": "WASION HOLDINGS LIMITED"
+ },
+ {
+  "code": "03396",
+  "name": "LEGEND HOLDINGS CORPORATION"
+ },
+ {
+  "code": "03403",
+  "name": "CHINAAMC HSI ESG ETF -HKD TRADED UNITS"
+ },
+ {
+  "code": "03406",
+  "name": "PING AN TECHNOLOGY SELECT ETF -HKD COUNTER"
+ },
+ {
+  "code": "03423",
+  "name": "CMS HANG SENG TECH INDEX ETF"
+ },
+ {
+  "code": "03431",
+  "name": "CSOP FTSE HK-KOREA TECH+ INDEX ETF"
+ },
+ {
+  "code": "03432",
+  "name": "CSOP MSCI HK CHINA CONNECT SELECT ETF"
+ },
+ {
+  "code": "03437",
+  "name": "BOSERA CHINA REFORM HONG KONG CENTRAL -SOES HIGH DIV YIELD IND ETF-HKD COUNTER"
+ },
+ {
+  "code": "03441",
+  "name": "CSOP FTSE EAST-WEST EQUITY SELECT ETF"
+ },
+ {
+  "code": "03442",
+  "name": "CSOP HANG SENG HK-US TECH ETF"
+ },
+ {
+  "code": "03443",
+  "name": "CSOP FTSE HONG KONG EQUITY ETF"
+ },
+ {
+  "code": "03469",
+  "name": "CSOP HANG SENG STOCK CONNECT HIGH DIVIDEND ETF"
+ },
+ {
+  "code": "03477",
+  "name": "PING AN EAST-WEST SELECT ETF -HKD COUNTER"
+ },
+ {
+  "code": "03483",
+  "name": "E FUND (HK) MSCI ASIA PACIFIC SELECT HIGH DIVIDEND INDEX ETF-HKD COUNTER"
+ },
+ {
+  "code": "03489",
+  "name": "E FUND (HK) FTSE AI SELECT INDEX ETF -HKD COUNTER"
+ },
+ {
+  "code": "03606",
+  "name": "FUYAO GLASS INDUSTRY GROUP CO., LTD"
+ },
+ {
+  "code": "03613",
+  "name": "BEIJING TONG REN TANG CHINESE MEDICINE COMPANY LIMITED"
+ },
+ {
+  "code": "03618",
+  "name": "CHONGQING RURAL COMMERCIAL BANK CO., LTD."
+ },
+ {
+  "code": "03633",
+  "name": "ZHONGYU ENERGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "03650",
+  "name": "KEEP INC."
+ },
+ {
+  "code": "03661",
+  "name": "SG MICRO CORP"
+ },
+ {
+  "code": "03668",
+  "name": "YANCOAL AUSTRALIA LTD"
+ },
+ {
+  "code": "03669",
+  "name": "CHINA YONGDA AUTOMOBILES SERVICES HOLDINGS LIMITED"
+ },
+ {
+  "code": "03677",
+  "name": "JIANGSU ZENERGY BATTERY TECHNOLOGIES GROUP CO., LTD."
+ },
+ {
+  "code": "03678",
+  "name": "SOHO HOLLY FUTURES CO., LTD."
+ },
+ {
+  "code": "03690",
+  "name": "MEITUAN -HKD TRADED SHARES"
+ },
+ {
+  "code": "03692",
+  "name": "HANSOH PHARMACEUTICAL GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "03696",
+  "name": "INSILICO MEDICINE CAYMAN TOPCO"
+ },
+ {
+  "code": "03698",
+  "name": "HUISHANG BANK CORPORATION LIMITED"
+ },
+ {
+  "code": "03709",
+  "name": "EEKA FASHION HOLDINGS LIMITED"
+ },
+ {
+  "code": "03738",
+  "name": "VOBILE GROUP LIMITED"
+ },
+ {
+  "code": "03750",
+  "name": "CONTEMPORARY AMPEREX TECHNOLOGY CO., LIMITED"
+ },
+ {
+  "code": "03759",
+  "name": "PHARMARON BEIJING CO., LTD."
+ },
+ {
+  "code": "03788",
+  "name": "HANKING GOLD INTERNATIONAL LIMITED"
+ },
+ {
+  "code": "03800",
+  "name": "GCL TECHNOLOGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "03808",
+  "name": "SINOTRUK (HONG KONG) LIMITED"
+ },
+ {
+  "code": "03813",
+  "name": "POU SHENG INTERNATIONAL (HOLDINGS) LIMITED"
+ },
+ {
+  "code": "03818",
+  "name": "CHINA DONGXIANG (GROUP) CO., LTD."
+ },
+ {
+  "code": "03836",
+  "name": "CHINA HARMONY AUTO HOLDING LIMITED"
+ },
+ {
+  "code": "03858",
+  "name": "JIAXIN INTERNATIONAL RESOURCES INVESTMENT LIMITED"
+ },
+ {
+  "code": "03866",
+  "name": "BANK OF QINGDAO CO., LTD."
+ },
+ {
+  "code": "03868",
+  "name": "XINYI ENERGY HOLDINGS LIMITED"
+ },
+ {
+  "code": "03877",
+  "name": "CSSC (HONG KONG) SHIPPING COMPANY LIMITED"
+ },
+ {
+  "code": "03881",
+  "name": "CIDI INC."
+ },
+ {
+  "code": "03883",
+  "name": "CHINA AOYUAN GROUP LIMITED"
+ },
+ {
+  "code": "03886",
+  "name": "TOWN HEALTH INTERNATIONAL MEDICAL GROUP LIMITED"
+ },
+ {
+  "code": "03888",
+  "name": "KINGSOFT CORPORATION LIMITED"
+ },
+ {
+  "code": "03896",
+  "name": "KINGSOFT CLOUD HOLDINGS LIMITED"
+ },
+ {
+  "code": "03898",
+  "name": "ZHUZHOU CRRC TIMES ELECTRIC CO., LTD."
+ },
+ {
+  "code": "03899",
+  "name": "CIMC ENRIC HOLDINGS LIMITED"
+ },
+ {
+  "code": "03900",
+  "name": "GREENTOWN CHINA HOLDINGS LIMITED"
+ },
+ {
+  "code": "03908",
+  "name": "CHINA INTERNATIONAL CAPITAL CORPORATION LIMITED"
+ },
+ {
+  "code": "03913",
+  "name": "KWG LIVING GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "03918",
+  "name": "NAGACORP LTD"
+ },
+ {
+  "code": "03931",
+  "name": "CALB GROUP CO., LTD."
+ },
+ {
+  "code": "03933",
+  "name": "UNITED LABORATORIES INTERNATIONAL HOLDINGS LIMITED, THE"
+ },
+ {
+  "code": "03939",
+  "name": "WANGUO GOLD GROUP LIMITED"
+ },
+ {
+  "code": "03958",
+  "name": "DFZQ"
+ },
+ {
+  "code": "03968",
+  "name": "CHINA MERCHANTS BANK CO., LTD."
+ },
+ {
+  "code": "03969",
+  "name": "CHINA RAILWAY SIGNAL & COMMUNICATION CORPORATION LIMITED"
+ },
+ {
+  "code": "03986",
+  "name": "GIGADEVICE SEMICONDUCTOR INC."
+ },
+ {
+  "code": "03988",
+  "name": "BANK OF CHINA LIMITED"
+ },
+ {
+  "code": "03990",
+  "name": "MIDEA REAL ESTATE HOLDING LIMITED"
+ },
+ {
+  "code": "03993",
+  "name": "CMOC GROUP LIMITED"
+ },
+ {
+  "code": "03996",
+  "name": "CHINA ENERGY ENGINEERING CORPORATION LIMITED"
+ },
+ {
+  "code": "03998",
+  "name": "BOSIDENG INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "06030",
+  "name": "CITIC SECURITIES COMPANY LIMITED"
+ },
+ {
+  "code": "06031",
+  "name": "SANY HEAVY INDUSTRY CO., LTD."
+ },
+ {
+  "code": "06049",
+  "name": "POLY PROPERTY SERVICES CO., LTD."
+ },
+ {
+  "code": "06055",
+  "name": "CHINA TOBACCO INTERNATIONAL (HK) COMPANY LIMITED"
+ },
+ {
+  "code": "06060",
+  "name": "ZHONGAN ONLINE P & C INSURANCE CO., LTD."
+ },
+ {
+  "code": "06066",
+  "name": "CSC FINANCIAL CO., LTD."
+ },
+ {
+  "code": "06067",
+  "name": "SHENZHEN SENIOR TECHNOLOGY MATERIAL CO., LTD."
+ },
+ {
+  "code": "06068",
+  "name": "WISDOM EDUCATION INTERNATIONAL HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "06069",
+  "name": "SY HOLDINGS GROUP LIMITED"
+ },
+ {
+  "code": "06078",
+  "name": "HYGEIA HEALTHCARE HOLDINGS CO., LIMITED"
+ },
+ {
+  "code": "06082",
+  "name": "SHANGHAI BIREN TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "06086",
+  "name": "FANGZHOU INC."
+ },
+ {
+  "code": "06088",
+  "name": "FIT HON TENG LIMITED"
+ },
+ {
+  "code": "06090",
+  "name": "BUTONG GROUP"
+ },
+ {
+  "code": "06098",
+  "name": "COUNTRY GARDEN SERVICES HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "06099",
+  "name": "CHINA MERCHANTS SECURITIES CO., LTD."
+ },
+ {
+  "code": "06100",
+  "name": "TONGDAO LIEPIN GROUP"
+ },
+ {
+  "code": "06110",
+  "name": "TOPSPORTS INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "06127",
+  "name": "JOINN LABORATORIES (CHINA) CO., LTD."
+ },
+ {
+  "code": "06158",
+  "name": "ZHENRO PROPERTIES GROUP LIMITED"
+ },
+ {
+  "code": "06160",
+  "name": "BEONE MEDICINES LTD."
+ },
+ {
+  "code": "06166",
+  "name": "CIG SHANGHAI CO., LTD."
+ },
+ {
+  "code": "06168",
+  "name": "ZHOU LIU FU JEWELLERY CO., LTD."
+ },
+ {
+  "code": "06169",
+  "name": "CHINA YUHUA EDUCATION CORPORATION LIMITED"
+ },
+ {
+  "code": "06178",
+  "name": "EVERBRIGHT SECURITIES COMPANY LIMITED"
+ },
+ {
+  "code": "06181",
+  "name": "LAOPU GOLD CO., LTD."
+ },
+ {
+  "code": "06185",
+  "name": "CANSINO BIOLOGICS INC."
+ },
+ {
+  "code": "06186",
+  "name": "CHINA FEIHE LIMITED"
+ },
+ {
+  "code": "06196",
+  "name": "BANK OF ZHENGZHOU CO., LTD."
+ },
+ {
+  "code": "06198",
+  "name": "QINGDAO PORT INTERNATIONAL CO., LTD."
+ },
+ {
+  "code": "06600",
+  "name": "ONEROBOTICS (SHENZHEN) CO., LTD."
+ },
+ {
+  "code": "06601",
+  "name": "CHEERWIN GROUP LIMITED"
+ },
+ {
+  "code": "06603",
+  "name": "IFBH LIMITED"
+ },
+ {
+  "code": "06610",
+  "name": "FLOWING CLOUD TECHNOLOGY LTD"
+ },
+ {
+  "code": "06613",
+  "name": "LENS TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "06616",
+  "name": "GLOBAL NEW MATERIAL INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "06618",
+  "name": "JD HEALTH INTERNATIONAL INC. -HKD TRADED SHARES"
+ },
+ {
+  "code": "06639",
+  "name": "ARRAIL GROUP LIMITED"
+ },
+ {
+  "code": "06651",
+  "name": "BEIJING 51WORLD DIGITAL TWIN TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "06655",
+  "name": "HUAXIN BUILDING MATERIALS GROUP CO., LTD."
+ },
+ {
+  "code": "06660",
+  "name": "AIM VACCINE CO., LTD."
+ },
+ {
+  "code": "06666",
+  "name": "EVERGRANDE PROPERTY SERVICES GROUP LIMITED"
+ },
+ {
+  "code": "06680",
+  "name": "JL MAG RARE-EARTH CO., LTD."
+ },
+ {
+  "code": "06681",
+  "name": "BRAINAURORA MEDICAL TECHNOLOGY LIMITED"
+ },
+ {
+  "code": "06682",
+  "name": "PHANCY GROUP CO., LTD."
+ },
+ {
+  "code": "06683",
+  "name": "STAR PLUS LEGEND HOLDINGS LIMITED"
+ },
+ {
+  "code": "06687",
+  "name": "JST GROUP CORPORATION LIMITED"
+ },
+ {
+  "code": "06690",
+  "name": "HAIER SMART HOME CO., LTD."
+ },
+ {
+  "code": "06693",
+  "name": "CHIFENG JILONG GOLD MINING GROUP LIMITED"
+ },
+ {
+  "code": "06698",
+  "name": "STAR CM HOLDINGS LIMITED"
+ },
+ {
+  "code": "06699",
+  "name": "ANGELALIGN TECHNOLOGY INC."
+ },
+ {
+  "code": "06745",
+  "name": "BEFAR GROUP CO., LTD"
+ },
+ {
+  "code": "06806",
+  "name": "SHENWAN HONGYUAN GROUP CO., LTD."
+ },
+ {
+  "code": "06808",
+  "name": "SUN ART RETAIL GROUP LIMITED"
+ },
+ {
+  "code": "06809",
+  "name": "MONTAGE TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "06818",
+  "name": "CHINA EVERBRIGHT BANK COMPANY LIMITED"
+ },
+ {
+  "code": "06821",
+  "name": "ASYMCHEM LABORATORIES (TIANJIN) CO., LTD."
+ },
+ {
+  "code": "06826",
+  "name": "SHANGHAI HAOHAI BIOLOGICAL TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "06828",
+  "name": "BEIJING GAS BLUE SKY HOLDINGS LIMITED"
+ },
+ {
+  "code": "06855",
+  "name": "ASCENTAGE PHARMA GROUP INTERNATIONAL"
+ },
+ {
+  "code": "06862",
+  "name": "HAIDILAO INTERNATIONAL HOLDING LTD."
+ },
+ {
+  "code": "06865",
+  "name": "FLAT GLASS GROUP CO., LTD."
+ },
+ {
+  "code": "06869",
+  "name": "YANGTZE OPTICAL FIBRE AND CABLE JOINT STOCK LIMITED COMPANY"
+ },
+ {
+  "code": "06878",
+  "name": "DIFFER GROUP AUTO LIMITED"
+ },
+ {
+  "code": "06881",
+  "name": "CHINA GALAXY SECURITIES CO., LTD."
+ },
+ {
+  "code": "06886",
+  "name": "HUATAI SECURITIES CO., LTD."
+ },
+ {
+  "code": "06887",
+  "name": "SUNSHINE LAKE PHARMA CO., LTD."
+ },
+ {
+  "code": "06929",
+  "name": "ORBUSNEICH MEDICAL GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "06936",
+  "name": "S.F. HOLDING CO., LTD."
+ },
+ {
+  "code": "06955",
+  "name": "SHANDONG BOAN BIOTECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "06963",
+  "name": "SUNSHINE INSURANCE GROUP COMPANY LIMITED"
+ },
+ {
+  "code": "06968",
+  "name": "GANGLONG CHINA PROPERTY GROUP LIMITED"
+ },
+ {
+  "code": "06969",
+  "name": "SMOORE INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "06978",
+  "name": "IMMUNOTECH BIOPHARM LTD"
+ },
+ {
+  "code": "06979",
+  "name": "ZJLD GROUP INC"
+ },
+ {
+  "code": "06988",
+  "name": "JOY SPREADER GROUP INC."
+ },
+ {
+  "code": "06989",
+  "name": "EXCELLENCE COMMERCIAL PROPERTY & FACILITIES MANAGEMENT GROUP LIMITED"
+ },
+ {
+  "code": "06990",
+  "name": "SICHUAN KELUN-BIOTECH BIOPHARMACEUTICAL CO., LTD."
+ },
+ {
+  "code": "06993",
+  "name": "BLUE MOON GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "06996",
+  "name": "ANTENGENE CORPORATION LIMITED"
+ },
+ {
+  "code": "06998",
+  "name": "EDDING GENOR GROUP HOLDINGS LIMITED"
+ },
+ {
+  "code": "07489",
+  "name": "VOYAH AUTOMOTIVE TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "07618",
+  "name": "JINGDONG INDUSTRIALS, INC."
+ },
+ {
+  "code": "08328",
+  "name": "XINYI ELECTRIC STORAGE HOLDINGS LIMITED"
+ },
+ {
+  "code": "09606",
+  "name": "DUALITY BIOTHERAPEUTICS, INC."
+ },
+ {
+  "code": "09611",
+  "name": "SHANGHAI LONGCHEER TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "09618",
+  "name": "JD.COM, INC. -HKD TRADED SHARES"
+ },
+ {
+  "code": "09626",
+  "name": "BILIBILI INC."
+ },
+ {
+  "code": "09630",
+  "name": "CIRCUIT FABOLOGY MICROELECTRONICS EQUIPMENT CO., LTD."
+ },
+ {
+  "code": "09633",
+  "name": "NONGFU SPRING CO., LTD."
+ },
+ {
+  "code": "09636",
+  "name": "JF SMARTINVEST HOLDINGS LTD"
+ },
+ {
+  "code": "09658",
+  "name": "SUPER HI INTERNATIONAL HOLDING LTD."
+ },
+ {
+  "code": "09660",
+  "name": "HORIZON ROBOTICS"
+ },
+ {
+  "code": "09668",
+  "name": "CHINA BOHAI BANK CO., LTD."
+ },
+ {
+  "code": "09669",
+  "name": "BEISEN HOLDING LIMITED"
+ },
+ {
+  "code": "09676",
+  "name": "SHIYUE DAOTIAN GROUP CO., LTD."
+ },
+ {
+  "code": "09678",
+  "name": "UNISOUND AI TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "09688",
+  "name": "ZAI LAB LIMITED"
+ },
+ {
+  "code": "09690",
+  "name": "TUHU CAR INC."
+ },
+ {
+  "code": "09696",
+  "name": "TIANQI LITHIUM CORPORATION"
+ },
+ {
+  "code": "09699",
+  "name": "HANGZHOU SF INTRA-CITY INDUSTRIAL CO., LTD."
+ },
+ {
+  "code": "09857",
+  "name": "LINMON MEDIA LIMITED"
+ },
+ {
+  "code": "09858",
+  "name": "CHINA YOURAN DAIRY GROUP LIMITED"
+ },
+ {
+  "code": "09860",
+  "name": "ADICON HOLDINGS LIMITED"
+ },
+ {
+  "code": "09863",
+  "name": "ZHEJIANG LEAPMOTOR TECHNOLOGY CO., LTD."
+ },
+ {
+  "code": "09868",
+  "name": "XPENG INC."
+ },
+ {
+  "code": "09869",
+  "name": "HELENS INTERNATIONAL HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "09877",
+  "name": "JENSCARE SCIENTIFIC CO., LTD."
+ },
+ {
+  "code": "09878",
+  "name": "HUITONGDA NETWORK CO., LTD."
+ },
+ {
+  "code": "09880",
+  "name": "UBTECH ROBOTICS CORP LTD"
+ },
+ {
+  "code": "09885",
+  "name": "YSB INC."
+ },
+ {
+  "code": "09886",
+  "name": "DINGDANG HEALTH TECHNOLOGY GROUP LTD."
+ },
+ {
+  "code": "09887",
+  "name": "NANJING LEADS BIOLABS CO., LTD."
+ },
+ {
+  "code": "09890",
+  "name": "TANWAN INC."
+ },
+ {
+  "code": "09896",
+  "name": "MINISO GROUP HOLDING LIMITED"
+ },
+ {
+  "code": "09899",
+  "name": "NETEASE CLOUD MUSIC INC."
+ },
+ {
+  "code": "09903",
+  "name": "SHANGHAI ILUVATAR COREX SEMICONDUCTOR CO., LTD."
+ },
+ {
+  "code": "09909",
+  "name": "POWERLONG COMMERCIAL MANAGEMENT HOLDINGS LIMITED"
+ },
+ {
+  "code": "09911",
+  "name": "NEWBORN TOWN INC."
+ },
+ {
+  "code": "09922",
+  "name": "JIUMAOJIU INTERNATIONAL HOLDINGS LIMITED"
+ },
+ {
+  "code": "09923",
+  "name": "YEAHKA LIMITED"
+ },
+ {
+  "code": "09926",
+  "name": "AKESO, INC."
+ },
+ {
+  "code": "09927",
+  "name": "SERES GROUP CO., LTD."
+ },
+ {
+  "code": "09928",
+  "name": "TIMES NEIGHBORHOOD HOLDINGS LIMITED"
+ },
+ {
+  "code": "09930",
+  "name": "HORIZON CONSTRUCTION DEVELOPMENT LIMITED"
+ },
+ {
+  "code": "09939",
+  "name": "KINTOR PHARMACEUTICAL LIMITED"
+ },
+ {
+  "code": "09955",
+  "name": "CLOUDR GROUP LIMITED"
+ },
+ {
+  "code": "09959",
+  "name": "LINKLOGIS INC."
+ },
+ {
+  "code": "09966",
+  "name": "ALPHAMAB ONCOLOGY"
+ },
+ {
+  "code": "09968",
+  "name": "HUIJING HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "09969",
+  "name": "INNOCARE PHARMA LIMITED"
+ },
+ {
+  "code": "09973",
+  "name": "CHERY AUTOMOBILE CO., LTD."
+ },
+ {
+  "code": "09979",
+  "name": "GREENTOWN MANAGEMENT HOLDINGS COMPANY LIMITED"
+ },
+ {
+  "code": "09980",
+  "name": "EASTROC BEVERAGE (GROUP) CO., LTD."
+ },
+ {
+  "code": "09981",
+  "name": "SHENZHEN WOER HEAT-SHRINKABLE MATERIAL CO., LTD."
+ },
+ {
+  "code": "09982",
+  "name": "CENTRAL CHINA MANAGEMENT COMPANY LIMITED"
+ },
+ {
+  "code": "09983",
+  "name": "CENTRAL CHINA NEW LIFE LIMITED"
+ },
+ {
+  "code": "09985",
+  "name": "WEILONG DELICIOUS GLOBAL HOLDINGS LTD"
+ },
+ {
+  "code": "09987",
+  "name": "YUM CHINA HOLDINGS, INC."
+ },
+ {
+  "code": "09988",
+  "name": "ALIBABA GROUP HOLDING LIMITED -HKD TRADED SHARES"
+ },
+ {
+  "code": "09989",
+  "name": "SHENZHEN HEPALINK PHARMACEUTICAL GROUP CO., LTD."
+ },
+ {
+  "code": "09990",
+  "name": "ARCHOSAUR GAMES INC."
+ },
+ {
+  "code": "09992",
+  "name": "POP MART INTERNATIONAL GROUP LIMITED"
+ },
+ {
+  "code": "09993",
+  "name": "RADIANCE HOLDINGS (GROUP) COMPANY LIMITED"
+ },
+ {
+  "code": "09995",
+  "name": "REMEGEN CO., LTD."
+ },
+ {
+  "code": "09996",
+  "name": "PEIJIA MEDICAL LIMITED"
+ },
+ {
+  "code": "09999",
+  "name": "NETEASE, INC."
+ }
+]
