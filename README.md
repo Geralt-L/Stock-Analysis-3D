@@ -269,6 +269,17 @@ A 股:  akshare 同花顺 → akshare 个股信息 → efinance base_info → yf
 
 ---
 
+## 🔬 研究备忘录与监控清单
+
+除了单股 3D 评分，仓库也沉淀主题研究与可复核的监控指标：
+
+| 文件 | 内容 |
+|------|------|
+| [`research/2026-09-03-memory-cycle-inflection-and-hesai-sotp.md`](./research/2026-09-03-memory-cycle-inflection-and-hesai-sotp.md) | 存储周期 2022–2026 拐点复盘（供给投降 → 价格拐点 → 盈利拐点的领先/滞后）、汽车"内卷"与存储周期的结构对照、禾赛（HSAI / 2525.HK）核心雷达 / 机器人执行器 / Kosmo 三分部估值与"市场按哪一年定价"的反推 |
+| [`monitors/physical-ai-kosmo-monitor.yaml`](./monitors/physical-ai-kosmo-monitor.yaml) | 4 组 32 项监控指标（Physical AI 需求拐点、数据范式收敛与 Kosmo 落地、禾赛机器人业务兑现、汽车产业出清），每项含现状读数、拐点阈值、数据源与复核频率；建议每季度让 Claude 逐项 WebSearch 更新 `current` 并记录 `alerts` |
+
+---
+
 ## 📁 项目结构
 
 ```

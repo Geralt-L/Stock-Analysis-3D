@@ -1,0 +1,203 @@
+# Physical AI / Kosmo / 禾赛机器人业务 / 汽车出清 —— 监控指标清单
+# 用法：每季度（或在 frequency 指定的节点）逐项更新 current，若触及 threshold_positive / threshold_negative 则在 alerts 中记录。
+# 生成日期 2026-09-03；配套说明见 research/2026-09-03-memory-cycle-inflection-and-hesai-sotp.md 第 7 节。
+version: 1
+as_of: "2026-09-03"
+review_cadence: quarterly
+groups:
+  - id: A
+    name: Physical AI 需求拐点（类比存储 2023-05 Nvidia 时刻）
+    indicators:
+      - id: A1
+        name: 全球人形机器人年出货（多机构口径）
+        current: "2026H1: SAG 1.91万台(+272%) / Counterpoint >2.2万台; 2026全年预测 5–7.5万台; 禾赛管理层 2027 >10万台"
+        threshold_positive: "连续两个半年报年化 >10万台，且 ≥3 家机构口径差 <20%"
+        threshold_negative: "2026 全年 <5 万台，或 2027 增速 <50%"
+        sources: ["https://smartanalyticsglobal.com", "https://counterpointresearch.com", "https://www.trendforce.com/presscenter", "IDC/Omdia 年报"]
+        frequency: semiannual (Feb/Aug)
+      - id: A2
+        name: 付费商业/工业客户占比与复购
+        current: "SAG 2026H1 工业+商用 >70%（方法论未公开）；宇树 2025 人形收入 73.6% 来自高校科研；优必选大单多为政府数采中心"
+        threshold_positive: "≥3 家非关联工业客户公开第二批 ≥100 台复购订单，且行业追踪显示付费商业占比 >50% 并附方法论"
+        threshold_negative: "复购订单缺失，新增订单仍以科研/政府为主"
+        sources: ["上市公司财报与大单公告", "SAG/Counterpoint"]
+        frequency: quarterly
+      - id: A3
+        name: 头部厂商单位经济（宇树 688836 / 优必选 9880.HK / 智元招股书）
+        current: "优必选 2026H1 营收 12.69亿 (+104%)、毛利率 44.7%、亏损 3.39亿，全尺寸 ASP ≈64万元；宇树 2026H1 营收 11.52亿、归母净利 2.74亿；智元港股 IPO 目标 HK$400–500亿"
+        threshold_positive: "优必选经调整 EBITDA 转正且全尺寸人形毛利率 >30%；宇树在人形 ASP 年降 >20% 时净利率仍 >15%"
+        threshold_negative: "任一头部厂商毛利率跌破 20%"
+        frequency: semiannual
+      - id: A4
+        name: Tesla Optimus 产量披露与外销
+        current: "截至 2026-07 电话会无产量数字；报道称 Fremont 已开产、外销最早 2027H2"
+        threshold_positive: "季度产量 >2,500 台或宣布首个外部付费客户"
+        threshold_negative: "2026Q4 电话会仍无产量数字"
+        frequency: quarterly
+      - id: A5
+        name: 付费部署运行小时 / 机队规模 / RaaS 价格
+        current: "Agility 累计 >65,000 小时、9 个现场、>US$3亿多年预订（≈1,000 台）；Figure 03 在 BMW 单台；Sharpa North 上海 DQ 12 小时/天"
+        threshold_positive: "单客户 ≥100 台机队、可用率 >90%、>2,000 小时/台/年；RaaS 月费 < 当地人工全成本"
+        frequency: quarterly
+      - id: A6
+        name: 卖方出货预测修订方向
+        current: "2026 年内多次上修：MS 中国 1.4→2.8→5 万台；Goldman 全球 5.1→7.5 万台（2026-08-31）"
+        threshold_positive: "2026 实际落在 5–7.5 万带内且 2027 预测继续上修"
+        threshold_negative: "2026 实际 <5 万后卖方下修 2027（对应存储周期的预测下修—资本投降阶段）"
+        frequency: quarterly
+      - id: A7
+        name: 通用 VLA 陌生环境泛化（GPT 时刻判据）
+        current: "π0.7 组合泛化；Gemini Robotics 2 <200 样本适配新本体；GR00T N2 预告新环境成功率 2x（年底发布）；无公开策略达 80%"
+        threshold_positive: "RoboArena 类分布式真机榜单第一策略在未见任务+未见环境成功率 ≥80%"
+        threshold_negative: "2027 年底仍 <60%"
+        frequency: quarterly / per model release
+      - id: A8
+        name: 一级市场融资与资本投降信号
+        current: "人形 2026YTD 融资 US$86亿 > 2025 全年 US$61亿；宇树上市 11 日较高点 -50%；K-Scale 倒闭；Sharpa 投后 RMB 220亿"
+        threshold_positive: "投降后复苏：季度融资同比 -50%、≥3 起 down-round → 随后出货突破"
+        threshold_negative: "单季 >US$100 亿（过热）"
+        frequency: monthly
+      - id: A9
+        name: 美国对华机器人壁垒
+        current: "FCC 2026-07-28 禁新进口中国人形/四足；宇树、速腾入 1260H；Section 232 机器人调查未裁定"
+        threshold_negative: "232 对机器人/部件加税 ≥25%，或 FCC 将激光雷达/执行器纳入 Covered List（直接冲击禾赛）"
+        threshold_positive: "豁免或条件批准清单"
+        frequency: monthly
+  - id: B
+    name: 数据范式收敛与 Kosmo 落地
+    indicators:
+      - id: B1
+        name: Kosmo 收入与资产库商业化
+        current: "2026 全年 Kosmo 收入 '低八位数人民币'；台数/ASP/云订阅未披露；正式发售定于 2026H2 尚未发生"
+        threshold_positive: "2027 年单独披露收入 ≥1 亿元且云/资产授权占比 >30%"
+        threshold_negative: "2027 仍不单独披露或 Kosmo 收入 <5,000 万元；收入主要来自影视/文旅而非机器人"
+        frequency: quarterly (Hesai earnings)
+      - id: B2
+        name: Kosmo 头部客户覆盖
+        current: "已点名仅银河通用 Galbot（SAG 2026H1 全球第三）；>200 家潜在伙伴"
+        threshold_positive: "≥3 家 SAG 前五出货商或任一前沿实验室（NVIDIA/DeepMind/PI/Figure/Tesla）公开采用"
+        threshold_negative: "2027 年中仍仅 Galbot 一家点名"
+        frequency: quarterly
+      - id: B3
+        name: 前沿 VLA 模型卡是否列出真实扫描 3DGS 场景为预训练成分
+        current: "GR00T N1.6 数据构成无扫描场景；π0.7 / Gemini Robotics 2 未披露"
+        threshold_positive: "GR00T N2 或 π/Gemini 任一模型卡量化列出扫描真实场景（数量/小时）"
+        threshold_negative: "N2 发布时数据全部来自仿真生成 + 视频世界模型"
+        frequency: per model release (GTC 2027-03 重点)
+      - id: B4
+        name: 真机遥操数据单价 vs 合成/无本体数据
+        current: "中国真机 500–1,000 元/小时；整体 200–500；UMI 类预期收敛至真机 1/3–1/2"
+        threshold_positive: "真机 ≥500 元/小时且真机/无本体比 ≥2（利于场景扫描）"
+        threshold_negative: "真机跌破 300 元/小时或比值 <1.5"
+        frequency: semiannual
+      - id: B5
+        name: 生成式 real2sim（手机照片）vs 激光扫描重建的策略迁移差距
+        current: "World Labs Atlas 1–3 张图重建 3DGS（无同行评审接触任务数据）；Scaniverse $500 相机→Isaac Sim；GASE 显示全景相机重建策略差距 <10%"
+        threshold_negative: "公开基准显示 RGB-only 重建在接触丰富操作任务上 sim2real 成功率与 LiDAR 扫描差距 <5pct"
+        threshold_positive: "几何误差导致 RGB-only 方案在操作任务失败率显著更高被反复证实"
+        frequency: quarterly
+      - id: B6
+        name: Kosmo 与 NVIDIA Omniverse/Isaac 生态兼容
+        current: "Scaniverse/XGRIDS/NavVis/光轮已接入 Isaac Sim/NuRec；Kosmo 未公开 USD/NuRec 导出"
+        threshold_positive: "Kosmo 原生导出 USD/NuRec 并出现在 NVIDIA 机器人伙伴名单或 GTC 演示"
+        threshold_negative: "GTC 2027 仍无 Kosmo 相关内容"
+        frequency: per GTC (Mar/Jun/Nov)
+      - id: B7
+        name: 具身数据服务商经济性
+        current: "光轮 2026Q1 订单 5.5 亿元、累计融资约 20 亿；无问智科日产 >1,000 小时"
+        threshold_positive: "任一数据商年收入 >10 亿元且毛利 >40%"
+        threshold_negative: "头部数据商裁员/估值下调或价格战导致订单同比下滑"
+        frequency: quarterly
+      - id: B8
+        name: 空间捕获层资本与并购
+        current: "NavVis US$8,500万 D 轮（2026-08）；World Labs 收购 SceniX；Skild US$14亿"
+        threshold_positive: "NVIDIA/Google/Meta 或人形龙头收购/战略投资扫描硬件公司"
+        threshold_negative: "连续两季扫描层无融资而世界模型公司融资 >US$10 亿"
+        frequency: quarterly
+      - id: B9
+        name: 数据市场化程度
+        current: "Kinetic Blocks 2026-09-01 数据交易市场 beta；江苏数交所首单（价格未披露）；全球高质量物理交互数据约 50 万小时"
+        threshold_positive: "公开报价交易所成交 <200 元/小时且年成交 >100 万小时；或头部实验室配方中仿真/3DGS 占比 >50%"
+        frequency: quarterly
+  - id: C
+    name: 禾赛机器人业务兑现
+    indicators:
+      - id: C1
+        name: 机器人激光雷达季度出货与 ASP
+        current: "Q2 2026 142,371 台 (+193%)；H1 260,653；全年指引 >50 万；JT 系列约 RMB 1,000/台"
+        threshold_positive: "连续 4 季同比 >100% 且年出货 >100 万台；ASP 降幅收敛至 <10%"
+        threshold_negative: "同比增速跌破 50%"
+        frequency: quarterly
+      - id: C2
+        name: 执行器模组：出货、非 Sharpa 客户、加成率
+        current: "累计 >1 万套（2Q26）；>90% 售予 Sharpa；成本加成 70–80%；2027 '六位数'；肩/腕模组 2026H2 SOP"
+        threshold_positive: "≥3 家非 Sharpa 客户且月出货 >1 万套"
+        threshold_negative: "2027 关联交易续签时加成率下调、上限 <2026 的 3 亿，或 Sharpa 融资受阻"
+        frequency: quarterly + HKEX 关联交易公告
+      - id: C3
+        name: SGI 分部收入与亏损
+        current: "2026H1 收入 0.45 亿、经营亏损 1.15 亿；2026 指引 2–3 亿；2027 约 US$1 亿盈亏平衡"
+        threshold_positive: "2026 全年落在 2–3 亿且 Q4 亏损收窄；2027 如期盈亏平衡"
+        threshold_negative: "2026 全年低于 2 亿下限"
+        frequency: quarterly
+      - id: C4
+        name: Sharpa 进展（唯一执行器客户）
+        current: "投后估值 RMB 220 亿；SharpaWave ≈US$5 万/只；North 在上海 DQ 部署；2026 关联交易上限 3 亿，协议 2026-12-31 到期"
+        threshold_positive: "SharpaWave 年出货 >1 万只或 North 付费机队 >100 台；2027 上限 ≥6 亿"
+        frequency: semiannual
+      - id: C5
+        name: 核心雷达 ASP 与毛利率
+        current: "Q1 2026 ASP RMB 1,441 (-45%)；全年 ASP 指引约 1,320 (-28%)；毛利率 39–40%；北美收入占比 18.3%"
+        threshold_negative: "毛利率跌破 37% 或 ASP 年降 >35%"
+        threshold_positive: "海外收入占比 >25%"
+        frequency: quarterly
+      - id: C6
+        name: 1260H 诉讼与 DoD 禁令
+        current: "2026-08 D.C. 巡回上诉法院推翻一审，判定 DoD 列名缺乏正当依据、须重走程序；2026-06 版清单仍在列，尚未移出；2026-06-30 起 DoD 合同禁令生效"
+        threshold_positive: "正式移出 1260H 名单"
+        threshold_negative: "FCC 将激光雷达纳入 Covered List"
+        frequency: event-driven
+  - id: D
+    name: 汽车产业出清（类比存储的减产/去库存）
+    indicators:
+      - id: D1
+        name: 行业销售利润率（乘联会）
+        current: "2026H1 3.8%（1–2 月 2.9% 十年最低）；整车环节 1.5%"
+        threshold_positive: "连续两个季度 >5%"
+        frequency: monthly/quarterly
+      - id: D2
+        name: 汽车制造业产能利用率（统计局）
+        current: "2026Q2 70.8%；EV 产能利用率 64.5%（2025-03）；外资在华 55%（2024）"
+        threshold_positive: "回到 >75%"
+        frequency: quarterly
+      - id: D3
+        name: 龙头 capex 与新工厂公告
+        current: "比亚迪 2025 capex 峰值 RMB 1,568 亿（FCF -977 亿），TTM 1,210 亿；自主品牌产能年增约 7%"
+        threshold_positive: "前五自主品牌 capex 同比转负且新工厂公告停止"
+        frequency: semiannual
+      - id: D4
+        name: 经销商库存预警指数 / 库存系数（CADA）
+        current: "2026-08 预警指数 62.3%（+5.3pct）；7 月库存系数 1.48"
+        threshold_positive: "预警指数 <50%、库存系数 <1.2，且涨价后折扣不再回落"
+        frequency: monthly
+      - id: D5
+        name: 实质性退出与合并
+        current: "哪吒/威马/高合重整'复活'；长安—东风中止、长安—北汽仅框架；外资关厂（本田在华 120 万→72 万辆）"
+        threshold_positive: "月产 <5,000 辆企业资质被注销而非收购保牌；央企股权层面实质合并；整车企业数量 71 → 显著下降"
+        frequency: quarterly
+      - id: D6
+        name: 供应商账期与票据
+        current: "17 家承诺 ≤60 天；2025 年报平均约 54 天；赛力斯/奇瑞/广汽逆势拉长"
+        threshold_positive: "全行业应付账款天数 ≤60 且承兑汇票占比下降"
+        frequency: annual/semiannual
+      - id: D7
+        name: 出口 vs 内需
+        current: "2026H1 出口 530.7 万辆 (+52.8%)；1–8 月零售 -20%"
+        threshold_positive: "出口增速回落而国内价格仍稳（国内供需真正修复）"
+        frequency: monthly
+      - id: D8
+        name: 涨价的性质
+        current: "2026 年 3–6 月 15–20 家车企涨 2,000–18,000 元，由碳酸锂（6.2→20 万元/吨）与车规 DRAM（+180%）成本推动；7 月 37.3% 经销商仍大幅降价"
+        threshold_positive: "成本回落后价格不回落 = 供给侧定价权恢复"
+        frequency: quarterly
+alerts: []
